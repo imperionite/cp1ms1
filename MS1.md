@@ -1,3 +1,12 @@
+# Requirements Identification Submission (RIS)
+
+## Links to RIS Components
+
+- [Use Case Diagram](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing)
+- [Wireframe](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing)
+- [Project Plan Timeline](https://tinyurl.com/37zmrv79)
+- [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
+
 ## MotorPH Payroll System - Phase 1 Requirement Analysis
 
 ### Overview
