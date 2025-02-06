@@ -55,7 +55,7 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 - **Week 9-10**: Testing and revisions.
 - **Week 11**: Final submission.
 
-## Technology Stack
+#### Technology Stack
 - **Backend**: Spring Boot (Java 17), Maven
 - **Database**: PostgreSQL / MySQL (TBD based on scalability needs)
 - **Security**: Spring Security with JWT Authentication
