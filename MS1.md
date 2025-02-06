@@ -31,6 +31,8 @@ by: [Arnel Imperial](https://github.com/imperionite)
 
 - **Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1. Features like role-based user management, advanced reporting, or system optimizations will not be implemented during this phase.
 
+- **User Roles**: Since Phase 1 only includes basic employee details and salary calculations, user roles such as admin or employee-level access and management of those roles will not be implemented in this phase.
+
 - **Data Structure**: The MySQL database will be used solely to store employee information (employee number, name, birthday) and work hours for calculation purposes. Additional data models or relationships (such as employee benefits, payroll history, or detailed logs) are excluded from Phase 1.
 
 - **User Interface**: Phase 1 will not focus on complex user interfaces or frontend development. The application will operate primarily as a backend service, with the employee data presented in a simple and functional format. Any interactive or user-friendly front-end design will be excluded.
