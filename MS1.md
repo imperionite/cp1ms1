@@ -305,7 +305,7 @@ The wireframe consists of two main sections:
 This wireframe provides a foundational layout for the **Employee Salary Management System**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation through an intuitive interface. Refer to this [link](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing) for the visual representation of the project's wireframe.
 
 
-## MotorPH Payroll System - Phase 1 Project Plan
+## Project Plan
 
 ### Overview
 
