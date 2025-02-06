@@ -1,6 +1,6 @@
-# Requirements Identification Submission (RIS)
+# Phase 1 Requirements Identification Submission
 
-## Links to RIS Components
+## Requirement Identification Component Links
 
 - [Use Case Diagram](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing)
 - [Wireframe](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing)
@@ -56,7 +56,7 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 - The system should be designed to accommodate future phases, including more complex payroll rules and additional employee data fields.
 
 #### Deliverables
-- **Week 4**: System visualization (UI wireframes, architecture diagrams, API documentation).
+- **Week 4**: System visualization (UI wireframes, use case diagram).
 - **Week 5**: Working code for employee information display.
 - **Week 6**: Implementation of work hours calculation.
 - **Week 7**: Gross salary computation logic.
@@ -71,11 +71,11 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 - **Version Control**: GitHub for source code management
 
 #### Future Considerations
-- Integration with an employee attendance system (e.g., biometric or RFID-based logging).
+- Integration with an employee attendance system.
 - Support for different tax and deduction schemes.
 - UI/UX improvements for better employee self-service features.
 
-## Effort Estimation for MotorPH Payroll System (Phase 1)
+## Effort Estimation
 
 ### Overview
 This document provides an estimated effort required to develop Phase 1 of the MotorPH Payroll System. The estimation is based on a single developer handling the project end-to-end, covering design, development, testing, and documentation.
@@ -93,7 +93,7 @@ This document provides an estimated effort required to develop Phase 1 of the Mo
 **Estimated Effort: 8-12 hours**  
 - Research payroll system designs and UI best practices.
 - Create a high-level **system architecture** and **data flow diagram**.
-- Develop **wireframes/mockups** using Figma, Draw.io, or Balsamiq.
+- Develop **wireframes/mockups**.
 - Document requirements and refine based on feedback.
 
 ###### Employee Details Presentation (Week 5)
@@ -152,4 +152,115 @@ Since this project is being developed part-time over **11 weeks**, the workload 
 
 #### Generalization
 This effort estimation provides a **realistic roadmap** for a single developer to complete **Phase 1** of the MotorPH Payroll System within the allocated timeframe. Regular progress tracking and iterative development will ensure timely completion.
+
+## Use Case
+
+### Overview
+This document describes the **Use Case Diagram** for Phase 1 of the **MotorPH Payroll System**. The system allows users to view employee details, log work hours, and calculate salaries.
+
+#### Actor
+**User**  
+- Interacts with the system to retrieve employee details.  
+- Logs work hours.  
+- Triggers payroll calculations.  
+
+##### Use Cases
+
+###### View Employee Details
+**Actor:** User  
+**Description:** Retrieves and displays employee details such as employee number, name, and birthday.  
+**Preconditions:** Employee records exist in the system.  
+**Postconditions:** Employee details are displayed successfully.  
+
+###### Log Work Hours
+**Actor:** User  
+**Description:** Users log their work hours by recording clock-in and clock-out times.  
+**Preconditions:** The user is recognized by the system.  
+**Postconditions:** Work hours are stored for payroll computation.  
+
+###### Calculate Weekly Work Hours
+**Actor:** User  
+**Description:** Computes the total number of hours worked in a week based on recorded log-in and log-out times.  
+**Preconditions:** Work hour records must be available.  
+**Postconditions:** The system displays the calculated weekly work hours.  
+
+###### Compute Gross Salary
+**Actor:** User  
+**Description:** Calculates the gross weekly salary based on the total hours worked and the predefined pay rate.  
+**Preconditions:** Work hour records are available.  
+**Postconditions:** The system displays the gross salary.  
+
+###### Compute Net Salary
+**Actor:** User  
+**Description:** Computes the net weekly salary after applying generic deductions.  
+**Preconditions:** Gross salary calculation must be completed.  
+**Postconditions:** The system displays the net salary after deductions.  
+
+##### Use Case Diagram
+Refer to this [link](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing) for the use case diagram representation of the project.
+
+
+## Wireframe
+
+### Overview
+This document provides a detailed explanation of the wireframe design for the **Employee Salary Management System**. The wireframe showcases the visual layout and interaction flow of the application, focusing on Phase 1 requirements, which include presenting employee information and calculating salaries.
+
+#### Wireframe Overview
+The wireframe consists of two main sections:
+1. **Employee Information**: Displays basic employee details.
+2. **Salary Calculator**: Allows the user to compute an employee's gross salary, deductions, and net salary based on hours worked.
+
+##### Key Sections and Description
+
+###### **1. Header**
+- **Title**: "Employee Salary Management System"
+  - Positioned at the top of the interface.
+  - Clearly indicates the purpose of the application.
+  - Provides a professional and user-friendly introduction to the system.
+
+###### **2. Employee Information Section**
+- **Purpose**: Displays a list of employees and their details for easy reference.
+- **Content**:
+  - **Column Headers**:
+    - **Employee Number**: Displays unique IDs for employees (e.g., EMP001, EMP002).
+    - **Name**: Shows the full name of each employee (e.g., John Doe, Jane Smith).
+    - **Birthday**: Displays the date of birth in `YYYY-MM-DD` format (e.g., 1990-05-15).
+  - **Data Table**: Presents employee details in a tabular format for clear visibility.
+- **Position**: Centrally aligned in the upper half of the wireframe.
+- **Interaction**: Read-only; no user input is required.
+
+###### **3. Salary Calculator Section**
+- **Purpose**: Provides a simple and intuitive way to calculate salaries.
+- **Content**:
+  - **Dropdown Menu**: 
+    - Labeled **"Select Employee"**.
+    - Allows users to choose an employee from the list.
+  - **Input Field for Hours Worked**: 
+    - Accepts numeric input for the total hours worked by the selected employee.
+  - **Calculate Salary Button**:
+    - Triggers the computation of gross salary, deductions, and net salary based on the entered hours.
+  - **Result Display**:
+    - **Gross Salary**: Shows the calculated gross salary in currency format (e.g., `$0.00`).
+    - **Deductions**: Displays total deductions applied (e.g., `$0.00`).
+    - **Net Salary**: Shows the final computed salary after deductions (e.g., `$0.00`).
+- **Position**: Centrally aligned in the lower half of the wireframe for easy access.
+
+##### Layout and Interaction
+- **Layout Design**: The wireframe uses a clean and simple layout, dividing the interface into two distinct sections for better usability.
+- **User Interaction Flow**:
+  1. User views the employee list in the **Employee Information** section.
+  2. User selects an employee and enters hours worked in the **Salary Calculator** section.
+  3. User clicks the **Calculate Salary** button to compute and display the results.
+
+##### Accessibility and Usability
+- **Accessibility**: The design is clean, with sufficient spacing between elements to ensure readability.
+- **Usability**:
+  - Simple navigation and interaction.
+  - Minimal user input required to complete calculations.
+
+##### Generalization
+This wireframe provides a foundational layout for the **Employee Salary Management System**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation through an intuitive interface. Refer to this [link](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing) for the visual representation of the project's wireframe.
+
+
+
 
