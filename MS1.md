@@ -1,11 +1,54 @@
-# Requirements Identification Phase 1 Submission
+# Requirements Identification Submission (RIS) - Phase 1
 
-## Requirement Identification Component Links
+## RIS Component Links
 
 - [Use Case Diagram](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing)
 - [Wireframe](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing)
 - [Project Plan Timeline](https://tinyurl.com/37zmrv79)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
+
+## Limitations and Delimitations
+
+### Limitations
+
+1. **Scope of Features**: 
+   - The project focuses only on the basic functionalities required for Phase 1. Advanced features, such as role-based access control, tax computation, or real-time integrations with external systems, are not included at this stage.
+   - The salary calculation uses generic deductions without specific consideration for varying tax brackets or benefits.
+
+2. **Data Accuracy**: 
+   - The employee data and calculations depend on the accuracy of the input data. Incorrect or incomplete data may result in calculation errors.
+   - No real-time validation for employee working hours or anomalies like overtime or underperformance is implemented.
+
+3. **Database and Scalability**: 
+   - The application uses H2 as a development database, which is suitable for testing purposes but may not support scalability for larger data sets.
+   - Data persistence beyond Phase 1 is limited and will require migration to a production-ready database in future phases.
+
+4. **Testing Environment**: 
+   - Testing is conducted in a controlled development environment and may not cover edge cases encountered in a production setting.
+
+5. **Limited User Roles**: 
+   - The project assumes a single user type (User) interacting with the system, as no role-based access control is implemented.
+
+---
+
+### Delimitations
+
+1. **Phase-Specific Objectives**:
+   - The project is strictly focused on achieving the deliverables outlined for Phase 1, including employee data display, work hours calculation, gross salary computation, and net salary computation.
+
+2. **Geographical Context**:
+   - The system is designed with MotorPH in mind, adhering to generic Philippine payroll practices. Customization for other regions or companies is outside the current scope.
+
+3. **Excluded Features**:
+   - Advanced functionalities such as real-time analytics, tax integration, automated payroll distribution, and employee performance tracking are reserved for future phases.
+   - Role-based security features and detailed access control mechanisms will be implemented in subsequent phases if required.
+
+4. **Development Team Size**:
+   - The project is developed by a single developer, limiting the scope of simultaneous feature implementation and testing.
+
+5. **Technology Stack**:
+   - The project uses Java with Spring Boot as the primary framework. No other frameworks or third-party libraries outside the chosen stack are considered.
+
 
 ## Requirement Analysis
 
@@ -320,15 +363,15 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 ---
 
-## Conclusion
+### Conclusion
 
 The **MotorPH Payroll System Phase 1** project aims to lay the groundwork for a robust, end-to-end payroll management system. Through careful planning and phased implementation, this project addresses the core requirements of displaying employee details, calculating work hours, and determining gross and net salaries. The systematic approach outlined in this project plan ensures that deliverables are met within the given timeline while maintaining quality and usability.
 
-### Final Thought
+#### Final Thought
 
 Building the foundation of the payroll system in Phase 1 is not just about fulfilling technical requirements but also about understanding user needs and delivering a reliable and user-friendly solution. This phase sets the tone for future enhancements and expansions, ensuring scalability and efficiency for MotorPH.
 
-### Key Takeaways
+##### Key Takeaways
 
 - **Phased Development Approach**: Breaking down the requirements into smaller phases allows for iterative development, ensuring better focus and quality control.
 - **User-Centric Design**: Designing wireframes and implementing intuitive features ensures that the application is accessible and meets user expectations.
