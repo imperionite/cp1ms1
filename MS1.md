@@ -8,47 +8,34 @@ by: [Arnel Imperial](https://github.com/imperionite)
 - [Project Plan Timeline](https://tinyurl.com/37zmrv79)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
 
-## Limitations and Delimitations
+## Limitations
 
-### Limitations
+- **Single Developer**: As the sole developer on this project, all tasks including system design, coding, testing, and debugging will be handled by one person. This may lead to limited bandwidth for tackling issues that arise during development, possibly impacting the speed and efficiency of completion.
+  
+- **Scope Confined to Phase 1**: The project will strictly adhere to the specific requirements outlined in Phase 1, which include:
+  - Visualization of the application.
+  - Presentation of employee details (employee number, name, and birthday).
+  - Calculation of hours worked per week.
+  - Calculation of gross weekly salary based on hours worked.
+  - Calculation of net weekly salary after applying generic deductions.
 
-1. **Scope of Features**: 
-   - The project focuses only on the basic functionalities required for Phase 1. Advanced features, such as role-based access control, tax computation, or real-time integrations with external systems, are not included at this stage.
-   - The salary calculation uses generic deductions without specific consideration for varying tax brackets or benefits.
+  Any features, enhancements, or functionalities outside these tasks will not be addressed within this phase.
 
-2. **Data Accuracy**: 
-   - The employee data and calculations depend on the accuracy of the input data. Incorrect or incomplete data may result in calculation errors.
-   - No real-time validation for employee working hours or anomalies like overtime or underperformance is implemented.
+- **Database Constraints**: The MySQL database will be used to store employee data, including employee details and work hours, and will run in a Docker container. The database setup is limited to Phase 1 requirements and will not include advanced features like data analytics, reporting, or integration with external systems.
 
-3. **Database and Scalability**: 
-   - The application uses H2 as a development database, which is suitable for testing purposes but may not support scalability for larger data sets.
-   - Data persistence beyond Phase 1 is limited and will require migration to a production-ready database in future phases.
+- **Time Constraints**: With an 11-week timeframe, the focus will be on ensuring that the core functionality of employee information presentation, work hour and salary calculations is achieved. Time will not be allocated to expanding the system or addressing features not specified in Phase 1.
 
-4. **Testing Environment**: 
-   - Testing is conducted in a controlled development environment and may not cover edge cases encountered in a production setting.
+- **Testing Limitations**: Testing will be concentrated on validating the functionality of employee data presentation, work hour calculation, and salary computation. Thorough system-wide testing or performance optimization will be out of scope for this phase.
 
-5. **Limited User Roles**: 
-   - The project assumes a single user type (User) interacting with the system, as no role-based access control is implemented.
+## Delimitations
 
----
+- **Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1. Features like role-based user management, advanced reporting, or system optimizations will not be implemented during this phase.
 
-### Delimitations
+- **Data Structure**: The MySQL database will be used solely to store employee information (employee number, name, birthday) and work hours for calculation purposes. Additional data models or relationships (such as employee benefits, payroll history, or detailed logs) are excluded from Phase 1.
 
-1. **Phase-Specific Objectives**:
-   - The project is strictly focused on achieving the deliverables outlined for Phase 1, including employee data display, work hours calculation, gross salary computation, and net salary computation.
+- **User Interface**: Phase 1 will not focus on complex user interfaces or frontend development. The application will operate primarily as a backend service, with the employee data presented in a simple and functional format. Any interactive or user-friendly front-end design will be excluded.
 
-2. **Geographical Context**:
-   - The system is designed with MotorPH in mind, adhering to generic Philippine payroll practices. Customization for other regions or companies is outside the current scope.
-
-3. **Excluded Features**:
-   - Advanced functionalities such as real-time analytics, tax integration, automated payroll distribution, and employee performance tracking are reserved for future phases.
-   - Role-based security features and detailed access control mechanisms will be implemented in subsequent phases if required.
-
-4. **Development Team Size**:
-   - The project is developed by a single developer, limiting the scope of simultaneous feature implementation and testing.
-
-5. **Technology Stack**:
-   - The project uses Java with Spring Boot as the primary framework. No other frameworks or third-party libraries outside the chosen stack are considered.
+- **Error Handling and Security**: While basic error handling will be implemented, comprehensive error management, security (role-based access control and detailed JWT-based authentication), and encryption will not be addressed in Phase 1. The project will focus on implementing basic functional calculations without adding advanced security layers.
 
 
 ## Requirement Analysis
@@ -386,6 +373,7 @@ By completing this phase successfully, MotorPH will take a significant step towa
 ### Author
 
 [Arnel Imperial](https://github.com/imperionite)
+
 
 
 
