@@ -1,4 +1,4 @@
-# Phase 1 Requirements Identification Submission
+# Requirements Identification Phase 1 Submission
 
 ## Requirement Identification Component Links
 
@@ -7,7 +7,7 @@
 - [Project Plan Timeline](https://tinyurl.com/37zmrv79)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
 
-## MotorPH Payroll System - Phase 1 Requirement Analysis
+## Requirement Analysis
 
 ### Overview
 MotorPH is developing an end-to-end payroll system to manage employee details, work hours, and salary calculations. The project will be built in phases, expanding capabilities over time. This document outlines the requirements for **Phase 1**, which focuses on basic employee management and payroll calculations.
@@ -260,6 +260,84 @@ The wireframe consists of two main sections:
 
 ##### Generalization
 This wireframe provides a foundational layout for the **Employee Salary Management System**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation through an intuitive interface. Refer to this [link](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing) for the visual representation of the project's wireframe.
+
+
+## MotorPH Payroll System - Phase 1 Project Plan
+
+### Overview
+
+The **MotorPH Payroll System** aims to streamline payroll processes by managing products, employee details, and salaries. This document outlines the project plan for **Phase 1**, focusing on initial requirements and deliverables.
+
+#### Objectives
+
+- **Visualization**: Develop a visual representation of the application interface.
+- **Employee Information Presentation**: Display employee details, including employee number, name, and birthday.
+- **Work Hours Calculation**: Compute the total number of hours an employee works in a week.
+- **Gross Salary Calculation**: Determine the gross weekly salary based on hours worked.
+- **Net Salary Calculation**: Calculate the net weekly salary after applying standard deductions.
+
+##### Timeline
+
+| **Week** | **Milestone**                      | **Description**                                                                 |
+|----------|------------------------------------|---------------------------------------------------------------------------------|
+| 1-3      | Project Initiation                 | Gather requirements, define scope, and set up the development environment.      |
+| 4        | Visualization                      | Create wireframes and mockups of the application interface.                     |
+| 5        | Employee Details Presentation      | Implement functionality to display employee information.                        |
+| 6        | Hours Worked Calculation           | Develop feature to calculate weekly work hours.                                 |
+| 7        | Gross Salary Calculation           | Implement computation of gross weekly salary.                                   |
+| 8        | Net Salary Calculation             | Develop feature to calculate net weekly salary after deductions.                |
+| 9-10     | Testing and Revision               | Conduct thorough testing and make necessary revisions.                          |
+| 11       | Final Submission                   | Prepare and submit the final deliverable.                                       |
+
+##### Deliverables
+
+- **Wireframes and Mockups**: Visual designs of the application interface.
+- **Functional Modules**:
+  - Employee Information Display
+  - Work Hours Calculation
+  - Gross Salary Calculation
+  - Net Salary Calculation
+- **Testing Documentation**: Test cases, results, and bug fixes.
+- **Final Application**: Fully functional application meeting Phase 1 requirements.
+
+##### Tools and Technologies
+
+- **Programming Language**: Java
+- **Framework**: Spring Boot
+- **Database**: MySQL
+- **Version Control**: Git
+- **Project Management**: [ClickUp](https://tinyurl.com/37zmrv79)
+
+##### Risk Management
+
+- **Scope Creep**: Maintain clear requirements and manage changes through a formal change control process.
+- **Time Constraints**: Adhere to the timeline and allocate buffer time for unforeseen delays.
+- **Technical Challenges**: Regularly consult documentation and seek assistance from the developer community as needed.
+
+#### Generalization
+
+This project plan outlines the roadmap for developing the **MotorPH Payroll System Phase 1**. By following this plan, we aim to deliver a functional and user-friendly payroll system within the stipulated timeframe.
+
+---
+
+## Conclusion
+
+The **MotorPH Payroll System Phase 1** project aims to lay the groundwork for a robust, end-to-end payroll management system. Through careful planning and phased implementation, this project addresses the core requirements of displaying employee details, calculating work hours, and determining gross and net salaries. The systematic approach outlined in this project plan ensures that deliverables are met within the given timeline while maintaining quality and usability.
+
+### Final Thought
+
+Building the foundation of the payroll system in Phase 1 is not just about fulfilling technical requirements but also about understanding user needs and delivering a reliable and user-friendly solution. This phase sets the tone for future enhancements and expansions, ensuring scalability and efficiency for MotorPH.
+
+### Key Takeaways
+
+- **Phased Development Approach**: Breaking down the requirements into smaller phases allows for iterative development, ensuring better focus and quality control.
+- **User-Centric Design**: Designing wireframes and implementing intuitive features ensures that the application is accessible and meets user expectations.
+- **Foundation for Scalability**: By addressing the core functionalities now, the project creates a strong base for future phases, where additional features and role-based controls can be introduced.
+- **Time Management**: Strict adherence to the project timeline will be critical for timely delivery and maintaining alignment with business goals.
+- **Future Opportunities**: This phase provides valuable insights into system requirements, user behavior, and technical considerations, paving the way for an improved and comprehensive payroll solution in subsequent phases.
+
+By completing this phase successfully, MotorPH will take a significant step toward streamlining payroll processes and improving operational efficiency.
+
 
 
 
