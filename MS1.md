@@ -19,7 +19,6 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 9. [ Limitations ](#l)
 10. [ Delimitations ](#d)
 11. [ Conclusion ](#conclusion)
-12. [ Author ](#author)
 
 <a name="ris"></a>
 
@@ -413,11 +412,7 @@ Building the foundation of the payroll system in Phase 1 is not just about fulfi
 By completing this phase successfully, MotorPH will take a significant step toward streamlining payroll processes and improving operational efficiency.
 
 
-<a name="author"></a>
 
-### 👨🏻‍💻 Author
-
-[Arnel Imperial](https://github.com/imperionite)
 
 
 
