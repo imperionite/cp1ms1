@@ -1,3 +1,5 @@
+<a name="intro"></a>
+
 # Requirements Identification Submission (RIS) - Phase 1
 by: [Arnel Imperial](https://github.com/imperionite)
 
@@ -5,14 +7,32 @@ MotorPH is a fictional company aiming to develop a robust end-to-end payroll sys
 
 Phase 1 of the project focuses on establishing the fundamental functionality of the payroll system, which includes presenting basic employee information, calculating hours worked, and determining salary based on working hours and basic deductions. This phase sets the foundation for future enhancements and will be developed using a Java-based framework, specifically Spring Boot.
 
-## RIS Component Links
+## 🧬 Table of Contents
+
+1. [ Introduction ](#intro)
+2. [ RIS Components ](#ris)
+4. [ Requirement Analysis ](#ra)
+5. [ Effort Estimation ](#ee)
+6. [ Use Case ](#uc)
+7. [ Wireframe ](#wireframe)
+8. [ Project Plan ](#pp)
+9. [ Limitations ](#l)
+10. [ Delimitations ](#d)
+11. [ Conclusion ](#conclusion)
+12. [ Author ](#author)
+
+<a name="ris"></a>
+
+## 📌 RIS Component Links
 
 - [Use Case Diagram](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing)
 - [Wireframe](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing)
 - [Project Plan Timeline](https://tinyurl.com/37zmrv79)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
 
-## Requirement Analysis
+<a name="ra"></a>
+
+## 📌 Requirement Analysis
 
 ### Overview
 MotorPH is developing an end-to-end payroll system to manage employee details, work hours, and salary calculations. The project will be built in phases, expanding capabilities over time. This document outlines the requirements for **Phase 1**, which focuses on basic employee management and payroll calculations.
@@ -82,7 +102,9 @@ Non-functional requirements are considered based on the developers' preferences,
 - Support for different tax and deduction schemes.
 - UI/UX improvements for better employee self-service features.
 
-## Effort Estimation
+<a name="ee"></a>
+
+## 📌 Effort Estimation
 
 ### Overview
 This document provides an estimated effort required to develop Phase 1 of the MotorPH Payroll System. The estimation is based on a single developer handling the project end-to-end, covering design, development, testing, and documentation.
@@ -160,7 +182,9 @@ Since this project is being developed part-time over **11 weeks**, the workload 
 #### Generalization
 This effort estimation provides a **realistic roadmap** for a single developer to complete **Phase 1** of the MotorPH Payroll System within the allocated timeframe. Regular progress tracking and iterative development will ensure timely completion.
 
-## Use Case
+<a name="uc"></a>
+
+## 📌 Use Case
 
 ### Overview
 This document describes the **Use Case Diagram** for Phase 1 of the **MotorPH Payroll System**. The system allows users to view employee details, log work hours, and calculate salaries.
@@ -207,7 +231,9 @@ This document describes the **Use Case Diagram** for Phase 1 of the **MotorPH Pa
 Refer to this [link](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing) for the use case diagram representation of the project.
 
 
-## Wireframe
+<a name="wireframe"></a>
+
+## 📌 Wireframe
 
 ### Overview
 This document provides a detailed explanation of the wireframe design for the **Employee Salary Management System**. The wireframe showcases the visual layout and interaction flow of the application, focusing on Phase 1 requirements, which include presenting employee information and calculating salaries.
@@ -269,7 +295,9 @@ The wireframe consists of two main sections:
 This wireframe provides a foundational layout for the **Employee Salary Management System**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation through an intuitive interface. Refer to this [link](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing) for the visual representation of the project's wireframe.
 
 
-## Project Plan
+<a name="pp"></a>
+
+## 📌 Project Plan
 
 ### Overview
 
@@ -326,7 +354,9 @@ The **MotorPH Payroll System** aims to streamline payroll processes by managing 
 This project plan outlines the roadmap for developing the **MotorPH Payroll System Phase 1**. By following this plan, we aim to deliver a functional and user-friendly payroll system within the stipulated timeframe.
 
 
-## Limitations
+<a name="l"></a>
+
+## 📌 Limitations
 
 - **Single Developer**: As the sole developer on this project, all tasks including system design, coding, testing, and debugging will be handled by one person. This may lead to limited bandwidth for tackling issues that arise during development, possibly impacting the speed and efficiency of completion.
   
@@ -345,7 +375,10 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 - **Testing Limitations**: Testing will be concentrated on validating the functionality of employee data presentation, work hour calculation, and salary computation. Thorough system-wide testing or performance optimization will be out of scope for this phase.
 
-## Delimitations
+
+<a name="d"></a>
+
+## 📌 Delimitations
 
 - **Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1. Features like role-based user management, employee's time tracking features, advanced reporting, tax calculations, bonuses, or system optimizations will not be implemented during this phase.
 
@@ -359,15 +392,17 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 ---
 
-### Conclusion
+<a name="conclusion"></a>
+
+### 💡 Conclusion
 
 The **MotorPH Payroll System Phase 1** project aims to lay the groundwork for a robust, end-to-end payroll management system. Through careful planning and phased implementation, this project addresses the core requirements of displaying employee details, calculating work hours, and determining gross and net salaries. The systematic approach outlined in this project plan ensures that deliverables are met within the given timeline while maintaining quality and usability.
 
-#### Final Thought
+#### 🧠 Final Thought
 
 Building the foundation of the payroll system in Phase 1 is not just about fulfilling technical requirements but also about understanding user needs and delivering a reliable and user-friendly solution. This phase sets the tone for future enhancements and expansions, ensuring scalability and efficiency for MotorPH.
 
-##### Key Takeaways
+##### 🚀 Key Takeaways
 
 - **Phased Development Approach**: Breaking down the requirements into smaller phases allows for iterative development, ensuring better focus and quality control.
 - **User-Centric Design**: Designing wireframes and implementing intuitive features ensures that the application is accessible and meets user expectations.
@@ -378,7 +413,9 @@ Building the foundation of the payroll system in Phase 1 is not just about fulfi
 By completing this phase successfully, MotorPH will take a significant step toward streamlining payroll processes and improving operational efficiency.
 
 
-### Author
+<a name="author"></a>
+
+### 👨🏻‍💻 Author
 
 [Arnel Imperial](https://github.com/imperionite)
 
