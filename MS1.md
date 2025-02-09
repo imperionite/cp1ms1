@@ -374,9 +374,9 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 - **Testing Limitations**: Testing will be concentrated on validating the functionality of employee data presentation, work hour calculation, and salary computation. Thorough system-wide testing or performance optimization will be out of scope for this phase.
 
-- **Optional Features**: Any features that are not explicitly stated in the Phase 1 requirements will be considered optional elements. Their implementation will depend on time availability after fulfilling all mandatory requirements and will not be prioritized. Furthermore, optional features will only be implemented if the sole developer chooses to implement them.
+- **Optional Features**: Any features that are not explicitly stated in the Phase 1 requirements will be considered optional elements. Their implementation will depend on time availability after fulfilling all mandatory requirements and will not be prioritized. Implementation of optional features will be at the discretion of the developer, based on available time and resources.
 
-- **Mentor Suggestions**: The developer welcomes mentoring and feedback from the mentor and will actively seek their comments and suggestions during mentoring sessions. Any features suggested by the mentor that fall outside the original Phase 1 requirements will be carefully considered. However, due to time constraints and the focus on core Phase 1 objectives, the final decision on whether to implement such suggestions will be based on a careful assessment of their impact on the project's timeline, feasibility, and alignment with the learning objectives.
+- **Mentor Suggestions**: The developer welcomes mentoring and feedback from the mentor and will actively seek their comments and suggestions during mentoring sessions. All suggestions will be carefully considered, with implementation decisions based on their impact on the project's timeline, feasibility, learning objectives, and available resources.
 
 
 <a name="d"></a>
