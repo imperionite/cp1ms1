@@ -116,71 +116,80 @@ This document provides an estimated effort required to develop Phase 1 of the Mo
 - **40-hour workweek** is assumed for effort calculations.
 - Complexity is **moderate**, considering CRUD operations, calculations, and database interactions.
 
-##### Effort Breakdown
+##### Main Tasks
 
-###### Visualization of Requirements (Week 4)
-**Estimated Effort: 8-12 hours**  
-- Research payroll system designs and UI best practices.
-- Create a high-level **system architecture** and **data flow diagram**.
-- Develop **wireframes/mockups**.
-- Document requirements and refine based on feedback.
+1. **Conduct Needs Analysis (Requirements Gathering)**
+   - Identify all stakeholders' needs within MotorPH regarding their desired features in a custom payroll system.
 
-###### Employee Details Presentation (Week 5)
-**Estimated Effort: 15-20 hours**  
-- Design and implement an **Employee model** (Spring Boot entity).
-- Set up **database schema** (e.g., MySQL or PostgreSQL).
-- Develop REST API for **retrieving employee details**.
-- Implement a **frontend or API testing tool** for viewing data.
-- Perform initial unit testing.
+2. **Design Database Schema for Payroll Data Storage**
+   - Create tables for storing employee details, work hours, salary rates, deductions.
 
-###### Work Hours Calculation (Week 6)
-**Estimated Effort: 18-22 hours**  
-- Design logic for **clock-in and clock-out records**.
-- Develop API endpoint to **store and retrieve attendance data**.
-- Implement calculation logic to compute **weekly work hours**.
-- Unit test work hour computations.
+3. **Implement Employee Details Presentation**
+   - Develop code to display employee information such as number, name, birthday.
 
-###### Gross Wage Calculation (Week 7)
-**Estimated Effort: 15-18 hours**  
-- Define **pay rate logic** for employees.
-- Implement a calculation method for **weekly gross salary**.
-- Integrate this functionality into the API.
-- Write unit and integration tests.
+4. **Develop Hours Worked Calculation Logic**
+    – Write algorithms to accurately calculate weekly work hours based on attendance records.
 
-###### Net Wage Calculation (Week 8)
-**Estimated Effort: 15-18 hours**  
-- Implement **deductions logic** (e.g., taxes, benefits).
-- Integrate net salary computation into the existing payroll calculation.
-- Develop API response to return **net salary**.
-- Conduct initial validation testing.
+5.**Gross Salary Calculation Integration**
+     — Modify calculation logic to retrieve necessary data from the database like hourly wage rates
 
-###### Testing and Revision (Weeks 9-10)
-**Estimated Effort: 20-25 hours**  
-- Perform unit testing using **JUnit and Mockito**.
-- Conduct **manual API testing** using Postman or Swagger UI.
-- Fix bugs, optimize performance, and refine code.
-- Review system usability and security.
-- Document API endpoints and usage.
+6. **Net Salary Calculation After Deductions**
+     — Apply generic deductions using stored deduction rules from the database
 
-###### Final Submission (Week 11)
-**Estimated Effort: 8-12 hours**  
-- Prepare final **documentation** and **README.md** for GitHub.
-- Conduct a final **end-to-end test**.
-- Deploy or package the application for review.
-- Submit the project.
+7. **Testing & Revision**
+      — Conduct thorough testing of all calculations & integrations; revise code as needed
 
-##### Total Estimated Effort
-**99 - 127 hours (~2.5 - 3.5 weeks of full-time work)**  
-Since this project is being developed part-time over **11 weeks**, the workload is spread out to maintain steady progress.
+8. **Compliance & Security Measures Implementation_
+       — Implement measures ensuring legal compliance & safeguarding sensitive employee data 
 
-##### Risks and Considerations
-- **Unexpected technical challenges** (e.g., database issues, API bugs).
-- **Requirement changes** or scope creep in later phases.
-- **Learning curve** for advanced payroll calculations in later phases.
-- **Time constraints** with academic workload or external factors.
+9. **User-Friendly Interface Development**
+        – Design intuitive UI/UX allowing easy navigation by both administrators & employees accessing pay stubs or updating personal info 
 
-#### Generalization
-This effort estimation provides a **realistic roadmap** for a single developer to complete **Phase 1** of the MotorPH Payroll System within the allocated timeframe. Regular progress tracking and iterative development will ensure timely completion.
+10. **Backup Strategy Preparation**
+        – Plan regular backups of critical payroll data against potential loss or corruption 
+
+12. **Documentation of System Processes**
+        – Maintain detailed documentation outlining each step involved in using & maintaining the new system 
+
+##### Knowledge Needed
+To accomplish these tasks effectively:
+- Familiarity with database design principles.
+- Understanding of payroll calculation logic.
+- Knowledge of UI/UX design principles.
+- Awareness of compliance regulations affecting payroll processing.
+- Proficiency in programming languages suitable for web applications (e.g., Python).
+- Experience with security measures like encryption and access controls.
+
+##### Additional Help Needed
+Additional resources that would be beneficial include:
+1. Technical documentation and guides on database management systems (DBMS) like MySQL or PostgreSQL.
+2. Mentorship from experienced developers familiar with similar projects.
+3. Collaboration tools such as Slack or Trello to manage tasks efficiently across teams.
+4. Testing frameworks like JUnit for comprehensive unit testing.
+5.Integration APIs documentation if integrating with existing HR systems is required 
+6.Security audits by cybersecurity experts to ensure compliance and protect sensitive data 
+7.User interface templates that can be customized according to MotorPH’s branding guidelines 
+
+##### Estimated Time per Task
+Here are estimated times based on complexity and assuming moderate experience:
+
+1.Conduct Needs Analysis: 8–12 hours  
+2.Design Database Schema: 10–15 hours  
+3.Employee Details Presentation: 6–10 hours  
+4.Hours Worked Calculation Logic: 8–12 hours  
+5.Gross Salary Calculation Integration: 10–15 hours  
+6.Net Salary Calculation After Deductions: 12–18 hours  
+7.Testing & Revision: 20–30 hours  
+8.Integration Planning: 15–25 hours   
+9.Compliance Measures Implementation:20—30hours   
+10.User-Friendly Interface Development: 20—30_hours   
+11.Backup Strategy Preparation: 5—10_hours    
+12.Documentation Process: 8—15_hours   
+
+##### Estimated Completion
+
+To determine the number of weeks required to complete my outputs for Phase 1 of the MotorPH Payroll System, I need to consider the estimated total hours of work and the expected weekly time commitment of 7.5 hours per week. Based on the complexity of the project, the development process involves multiple stages, including visualization, employee information display, work hours calculation, payroll computation, and system testing. If I estimate that the entire project will take approximately 75 hours to complete, dividing this by the 7.5-hour weekly commitment results in 10 weeks of work. This aligns closely with the given 11-week timeline, allowing for some flexibility in testing, refinements, and mentoring sessions. By effectively managing my time and following a structured approach, I can ensure that all Phase 1 requirements are met within the expected timeframe while maintaining high-quality output.
+
 
 <a name="uc"></a>
 
