@@ -374,7 +374,7 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 ## 📌 Delimitations
 
-- **0Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1.
+- **Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1.
 
 - **User Roles**: Since Phase 1 only includes basic employee details and salary calculations, user roles such as admin or employee-level access and management of those roles will not be implemented in this phase.
 
