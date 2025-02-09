@@ -358,21 +358,12 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 ## 📌 Limitations
 
 - **Single Developer**: As the sole developer on this project, all tasks including system design, coding, testing, and debugging will be handled by one person. This may lead to limited bandwidth for tackling issues that arise during development, possibly impacting the speed and efficiency of completion.
-  
-- **Scope Confined to Phase 1**: The project will strictly adhere to the specific requirements outlined in Phase 1, which include:
-  - Visualization of the application.
-  - Presentation of employee details (employee number, name, and birthday).
-  - Calculation of hours worked per week.
-  - Calculation of gross weekly salary based on hours worked.
-  - Calculation of net weekly salary after applying generic deductions.
 
-  Any features, enhancements, or functionalities outside these tasks will not be addressed within this phase.
-
-- **Database Constraints**: The MySQL database will be used to store employee data, including employee details and work hours, and will run in a Docker container. The database setup is limited to Phase 1 requirements and will not include advanced features like data analytics, reporting, or integration with external systems.
+- **Database Constraints**: The MySQL database will be used to store employee data, including employee details and work hours, and will run in a Docker container. The database setup is limited to Phase 1 requirements and will not include features such as: data analytics, reporting, integration with external systems, stored procedures, triggers or scheduled tasks.
 
 - **Time Constraints**: With an 11-week timeframe, the focus will be on ensuring that the core functionality of employee information presentation, work hour and salary calculations is achieved. Time will not be allocated to expanding the system or addressing features not specified in Phase 1.
 
-- **Testing Limitations**: Testing will be concentrated on validating the functionality of employee data presentation, work hour calculation, and salary computation. Thorough system-wide testing or performance optimization will be out of scope for this phase.
+- **Testing Limitations**: Testing will be concentrated on validating the functionality of employee data presentation, work hour calculation, and salary computation. System-wide testing, user acceptance testing, load testing, stress testing, performance optimization, or security testing will not be performed in this phase.
 
 - **Optional Features**: Any features that are not explicitly stated in the Phase 1 requirements will be considered optional elements. Their implementation will depend on time availability after fulfilling all mandatory requirements and will not be prioritized. Implementation of optional features will be at the discretion of the developer, based on available time and resources.
 
@@ -383,7 +374,7 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 ## 📌 Delimitations
 
-- **Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1. Features like role-based user management, employee's time tracking features, advanced reporting, tax calculations, bonuses, or system optimizations will not be implemented during this phase.
+- **0Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1.
 
 - **User Roles**: Since Phase 1 only includes basic employee details and salary calculations, user roles such as admin or employee-level access and management of those roles will not be implemented in this phase.
 
@@ -391,7 +382,7 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 - **User Interface**: Phase 1 will not focus on complex user interfaces or frontend development. The application will operate primarily as a backend service, with the employee data presented in a simple and functional format. The user interface will be minimal in design, and there will be limited focus on the aesthetics or advanced user interface features.
 
-- **Error Handling and Security**: While basic error handling will be implemented, comprehensive error management, security (role-based access control and detailed JWT-based authentication), and encryption will not be addressed in Phase 1. The project will focus on implementing basic functional calculations without adding advanced security layers.
+- **Error Handling and Security**: While basic error handling will be implemented, comprehensive error management and security will not be addressed in Phase 1. The project will focus on implementing basic functional calculations without implementing measures such as multi-factor authentication, intrusion detection, or regular security audits.
 
 ---
 
