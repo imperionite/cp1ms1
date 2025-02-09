@@ -11,15 +11,15 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 
 1. [ Introduction ](#intro)
 2. [ RIS Components ](#ris)
-4. [ Requirement Analysis ](#ra)
-5. [ Effort Estimation ](#ee)
-6. [ Use Case ](#uc)
-7. [ Wireframe ](#wireframe)
-8. [ Project Plan ](#pp)
-9. [ Limitations ](#l)
-10. [ Delimitations ](#d)
-11. [ Project Continuation & MS 2 Foundation ](ms2)
-12. [ Conclusion ](#conclusion)
+3. [ Requirement Analysis ](#ra)
+4. [ Effort Estimation ](#ee)
+5. [ Use Case ](#uc)
+6. [ Wireframe ](#wireframe)
+7. [ Project Plan ](#pp)
+8. [ Limitations ](#l)
+9. [ Delimitations ](#d)
+10. [ Project Continuation & MS 2 Foundation ](ms2)
+11. [ Conclusion ](#conclusion)
 
 <a name="ris"></a>
 
