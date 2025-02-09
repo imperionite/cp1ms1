@@ -18,7 +18,8 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 8. [ Project Plan ](#pp)
 9. [ Limitations ](#l)
 10. [ Delimitations ](#d)
-11. [ Conclusion ](#conclusion)
+11. [ Project Continuation & MS 2 Foundation ](ms2)
+12. [ Conclusion ](#conclusion)
 
 <a name="ris"></a>
 
@@ -383,6 +384,25 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 - **User Interface**: Phase 1 will not focus on complex user interfaces or frontend development. The application will operate primarily as a backend service, with the employee data presented in a simple and functional format. The user interface will be minimal in design, and there will be limited focus on the aesthetics or advanced user interface features.
 
 - **Error Handling and Security**: While basic error handling will be implemented, comprehensive error management and security will not be addressed in Phase 1. The project will focus on implementing basic functional calculations without implementing complex security features.
+
+
+<a name="ms2"></a>
+
+
+## 📌 Project Continuation & MS 2 Foundation
+
+The repository **[cp1](https://github.com/imperionite/cp1)** serves as the **foundation for Milestone 2 (MS2)** of the MotorPH Payroll System. While Phase 1 is still in development, this repository already includes both **explicit and implicit requirements** for Phase 1, ensuring a structured approach for future enhancements.  
+
+### **Current Status:**  
+✔️ **Phase 1 requirements setup** – The core functionalities have been structured according to the initial specifications.  
+✔️ **Explicit & implicit requirements considered** – Some additional design elements have been planned for seamless expansion.  
+✔️ **Ongoing development** – The project is actively being improved and refined based on requirements and feedback.  
+
+### **Next Steps:**  
+🚀 **Serial Mentoring Sessions** – The project will undergo **scheduled mentoring sessions** with the assigned mentor to ensure that all requirements are met effectively and any refinements are aligned with best practices.  
+📌 **Incremental Updates** – Future iterations will incorporate refinements based on both **Phase 1 requirements and MS2 objectives**.  
+
+This repository remains a **work in progress**, with continuous development and guidance to ensure its successful completion.  
 
 ---
 
