@@ -18,7 +18,7 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 7. [ Project Plan ](#pp)
 8. [ Limitations ](#l)
 9. [ Delimitations ](#d)
-10. [ Project Continuation & MS 2 Foundation ](ms2)
+10. [ Project Continuation & MS 2 Foundation ](#ms2)
 11. [ Conclusion ](#conclusion)
 
 <a name="ris"></a>
