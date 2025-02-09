@@ -376,13 +376,13 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 
 - **Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1.
 
-- **User Roles**: Since Phase 1 only includes basic employee details and salary calculations, user roles such as admin or employee-level access and management of those roles will not be implemented in this phase.
+- **User Roles**: Phase 1 includes only basic employee details and salary calculations. User roles, such as admin or system user, will be implemented. Employee-level access and management will be considered but not emphasized.
 
 - **Data Structure**: The MySQL database will be used solely to store employee information (employee number, name, birthday) and work hours for calculation purposes. Additional data models or relationships (such as employee benefits, payroll history, or detailed logs) are excluded from Phase 1.
 
 - **User Interface**: Phase 1 will not focus on complex user interfaces or frontend development. The application will operate primarily as a backend service, with the employee data presented in a simple and functional format. The user interface will be minimal in design, and there will be limited focus on the aesthetics or advanced user interface features.
 
-- **Error Handling and Security**: While basic error handling will be implemented, comprehensive error management and security will not be addressed in Phase 1. The project will focus on implementing basic functional calculations without implementing measures such as multi-factor authentication, intrusion detection, or regular security audits.
+- **Error Handling and Security**: While basic error handling will be implemented, comprehensive error management and security will not be addressed in Phase 1. The project will focus on implementing basic functional calculations without implementing complex security features.
 
 ---
 
