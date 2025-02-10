@@ -322,16 +322,45 @@ The **MotorPH Payroll System** aims to streamline payroll processes by managing 
 
 ##### Timeline
 
-| **Week** | **Milestone**                      | **Description**                                                                 |
-|----------|------------------------------------|---------------------------------------------------------------------------------|
-| 1-3      | Project Initiation                 | Gather requirements, define scope, and set up the development environment.      |
-| 4        | Visualization                      | Create wireframes and mockups of the application interface.                     |
-| 5        | Employee Details Presentation      | Implement functionality to display employee information.                        |
-| 6        | Hours Worked Calculation           | Develop feature to calculate weekly work hours.                                 |
-| 7        | Gross Salary Calculation           | Implement computation of gross weekly salary.                                   |
-| 8        | Net Salary Calculation             | Develop feature to calculate net weekly salary after deductions.                |
-| 9-10     | Testing and Revision               | Conduct thorough testing and make necessary revisions.                          |
-| 11       | Final Submission                   | Prepare and submit the final deliverable.                                       |
+
+| TASK #  | TASK & SUB-TASK                      | DEPENDENCY | OWNER  | START DATE | END DATE | STATUS     | ACTUAL START | ACTUAL END | NOTES |
+|---------|--------------------------------------|------------|--------|------------|----------|------------|--------------|------------|-------|
+| **1**   | **Conduct Needs Analysis**          | -          | User   | 01/28/25   | 02/01/25 | Not Started | -            | -          | Identify all stakeholder needs. |
+| **1.1** | Gather payroll processing requirements | -       | User   | 01/28/25   | 01/29/25 | Not Started | -            | -          | Interview key stakeholders. |
+| **1.2** | Define scope & constraints          | 1.1        | User   | 01/30/25   | 02/01/25 | Not Started | -            | -          | Document project limitations. |
+| **2**   | **Design Database Schema**          | 1          | User   | 02/02/25   | 02/07/25 | Not Started | -            | -          | Define employee details, payroll structure. |
+| **2.1** | Create employee details table       | -          | User   | 02/02/25   | 02/03/25 | Not Started | -            | -          | Store name, birthday, employee number. |
+| **2.2** | Create attendance records table     | 2.1        | User   | 02/04/25   | 02/05/25 | Not Started | -            | -          | Store login/logout timestamps. |
+| **2.3** | Define payroll calculations table   | 2.2        | User   | 02/06/25   | 02/07/25 | Not Started | -            | -          | Store salary, deductions, tax rates. |
+| **3**   | **Develop Employee Details Display** | 2          | User   | 02/08/25   | 02/12/25 | Not Started | -            | -          | Implement UI for displaying employee data. |
+| **3.1** | Design employee details API        | -          | User   | 02/08/25   | 02/09/25 | Not Started | -            | -          | Implement REST API endpoints. |
+| **3.2** | Create frontend for employee list   | 3.1        | User   | 02/10/25   | 02/12/25 | Not Started | -            | -          | Display employee details. |
+| **4**   | **Implement Work Hours Calculation** | 3          | User   | 02/13/25   | 02/18/25 | Not Started | -            | -          | Process attendance records, compute hours. |
+| **4.1** | Fetch and parse attendance records | -          | User   | 02/13/25   | 02/14/25 | Not Started | -            | -          | Extract timestamps. |
+| **4.2** | Develop work hours computation logic | 4.1       | User   | 02/15/25   | 02/16/25 | Not Started | -            | -          | Calculate hours worked per week. |
+| **4.3** | Validate calculations with test data | 4.2       | User   | 02/17/25   | 02/18/25 | Not Started | -            | -          | Ensure accuracy of calculations. |
+| **5**   | **Integrate Gross Salary Calculation** | 4          | User   | 02/19/25   | 02/24/25 | Not Started | -            | -          | Apply hourly wage logic. |
+| **6**   | **Implement Net Salary Calculation** | 5          | User   | 02/25/25   | 03/02/25 | Not Started | -            | -          | Apply deductions and finalize payroll computation. |
+| **6.1** | Implement tax deductions            | -          | User   | 02/25/25   | 02/26/25 | Not Started | -            | -          | Apply tax rates. |
+| **6.2** | Apply benefits & insurance deductions | 6.1       | User   | 02/27/25   | 02/28/25 | Not Started | -            | -          | Compute deductions. |
+| **6.3** | Compute final net salary            | 6.2        | User   | 03/01/25   | 03/02/25 | Not Started | -            | -          | Generate take-home pay. |
+| **7**   | **Testing & Revisions**             | 6          | User   | 03/03/25   | 03/09/25 | Not Started | -            | -          | Debug and validate payroll computations. |
+| **7.1** | Conduct unit testing                | -          | User   | 03/03/25   | 03/05/25 | Not Started | -            | -          | Test individual modules. |
+| **7.2** | Perform integration testing         | 7.1        | User   | 03/06/25   | 03/07/25 | Not Started | -            | -          | Validate all components together. |
+| **7.3** | Fix identified bugs & optimize performance | 7.2  | User   | 03/08/25   | 03/09/25 | Not Started | -            | -          | Ensure stability. |
+| **8**   | **Implement Compliance & Security Measures** | 6        | User   | 03/10/25   | 03/13/25 | Not Started | -            | -          | Add data protection, user authentication. |
+| **9**   | **Develop User-Friendly Interface**  | 7,8        | User   | 03/14/25   | 03/17/25 | Not Started | -            | -          | Enhance UI for better usability. |
+| **9.1** | Design UI layouts                   | -          | User   | 03/14/25   | 03/15/25 | Not Started | -            | -          | Define layouts. |
+| **9.2** | Implement frontend components       | 9.1        | User   | 03/16/25   | 03/17/25 | Not Started | -            | -          | Apply styling and interaction. |
+| **10**  | **Backup Strategy Implementation**  | 8          | User   | 03/18/25   | 03/20/25 | Not Started | -            | -          | Plan and automate payroll data backups. |
+| **11**  | **Document System Processes**       | 10         | User   | 03/21/25   | 03/24/25 | Not Started | -            | -          | Prepare technical documentation. |
+
+
+###### **Project Summary**
+- **Start Date:** January 28, 2025  
+- **End Date:** March 24, 2025  
+- **Duration:** **10 weeks**  
+- **Estimated Hours:** **75 hours** (aligned with **7.5 hours per week**)  
 
 ##### Deliverables
 
