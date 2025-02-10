@@ -27,7 +27,7 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 
 - [Use Case Diagram](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing)
 - [Wireframe](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing)
-- [Project Plan Timeline](https://tinyurl.com/37zmrv79)
+- [Project Plan Timeline](https://tinyurl.com/mr4bjzjm)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
 
 <a name="ra"></a>
@@ -379,7 +379,7 @@ The **MotorPH Payroll System** aims to streamline payroll processes by managing 
 - **Framework**: Spring Boot
 - **Database**: MySQL
 - **Version Control**: Git
-- **Project Management**: [ClickUp](https://tinyurl.com/37zmrv79)
+- **Project Management**: [ClickUp](https://tinyurl.com/mr4bjzjm)
 
 ##### Risk Management
 
