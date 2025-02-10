@@ -25,8 +25,8 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 
 ## 📌 RIS Component Links
 
-- [Use Case Diagram](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing)
-- [Wireframe](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing)
+- [Use Case Diagram](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing)
+- [Wireframe](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
 - [Project Plan Timeline](https://tinyurl.com/mr4bjzjm)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
 
@@ -237,7 +237,7 @@ This document describes the **Use Case Diagram** for Phase 1 of the **MotorPH Pa
 **Postconditions:** The system displays the net salary after deductions.  
 
 ##### Use Case Diagram
-Refer to this [link](https://drive.google.com/file/d/1MYsYfS5Aj8RFiYwGMJpwl76zFq1ztPzi/view?usp=sharing) for the use case diagram representation of the project.
+Refer to this [link](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing) for the use case diagram representation of the project.
 
 
 <a name="wireframe"></a>
@@ -301,7 +301,7 @@ The wireframe consists of two main sections:
   - Minimal user input required to complete calculations.
 
 ##### Generalization
-This wireframe provides a foundational layout for the **Employee Salary Management System**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation through an intuitive interface. Refer to this [link](https://drive.google.com/file/d/1VLY7Pq6Ki4HjkVK_W3DYCvGpOmF6sWig/view?usp=sharing) for the visual representation of the project's wireframe.
+This wireframe provides a foundational layout for the **Employee Salary Management System**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation through an intuitive interface. Refer to this [link](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing) for the visual representation of the project's wireframe.
 
 
 <a name="pp"></a>
