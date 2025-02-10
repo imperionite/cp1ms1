@@ -157,7 +157,7 @@ To accomplish these tasks effectively:
 - Understanding of payroll calculation logic.
 - Knowledge of UI/UX design principles.
 - Awareness of compliance regulations affecting payroll processing.
-- Proficiency in programming languages suitable for web applications (e.g., Python).
+- Proficiency in programming languages suitable for web applications (e.g., Java or Python).
 - Experience with security measures like encryption and access controls.
 
 ##### Additional Help Needed
@@ -181,10 +181,10 @@ Here are estimated times based on complexity and assuming moderate experience:
 6.Net Salary Calculation After Deductions: 12–18 hours  
 7.Testing & Revision: 20–30 hours  
 8.Integration Planning: 15–25 hours   
-9.Compliance Measures Implementation:20—30hours   
-10.User-Friendly Interface Development: 20—30_hours   
-11.Backup Strategy Preparation: 5—10_hours    
-12.Documentation Process: 8—15_hours   
+9.Compliance Measures Implementation:20—30 hours   
+10.User-Friendly Interface Development: 20—30 hours   
+11.Backup Strategy Preparation: 5—10 hours    
+12.Documentation Process: 8—15 hours   
 
 ##### Estimated Completion
 
