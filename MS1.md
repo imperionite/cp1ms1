@@ -320,7 +320,7 @@ The **MotorPH Payroll System** aims to streamline payroll processes by managing 
 - **Gross Salary Calculation**: Determine the gross weekly salary based on hours worked.
 - **Net Salary Calculation**: Calculate the net weekly salary after applying standard deductions.
 
-##### Timeline
+### Timeline
 
 
 | TASK #  | TASK & SUB-TASK                      | DEPENDENCY | OWNER  | START DATE | END DATE | STATUS     | ACTUAL START | ACTUAL END | NOTES |
@@ -356,7 +356,7 @@ The **MotorPH Payroll System** aims to streamline payroll processes by managing 
 | **11**  | **Final Submission**                | 10         |         | 03/21/25   | 03/24/25 | Not Started | -            | -          | Final Submission |
 
 
-###### **Project Summary**
+#### **Project Summary**
 - **Start Date:** January 28, 2025  
 - **End Date:** March 24, 2025  
 - **Duration:** **10 weeks**  
