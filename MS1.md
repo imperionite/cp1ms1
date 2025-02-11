@@ -4,11 +4,32 @@ by: [Arnel Imperial](https://github.com/imperionite)
 
 <a name="intro"></a>
 
-## Introduction
+## 📌 Introduction
 
 This document outlines the project plan, requirements, design, and implementation details for Phase 1 of the MotorPH Payroll System. The goal of this phase is to develop a foundational system for presenting employee information and calculating salaries, with an optional enhancement for secure authentication.
 
-This phase sets the foundation for future enhancements and will be developed using a Java-based framework, specifically Spring Boot.
+The repository [imperionite/cp1](https://github.com/imperionite/cp1) serves as the initial implementation, focusing on setting up both **explicit and implicit requirements** of the project. The system is continuously developed and will undergo **serial mentoring sessions** with the assigned mentor to refine its features and ensure its alignment with best practices.
+
+**Technology Stack**
+- **Backend:** Java 17, Spring Boot 3.4.2
+- **Database:** MySQL (Relational Database for payroll data storage)
+- **Security:** JWT Authentication, Role-Based Access Control
+- **Data Ingestion:** Spring Boot API & ApplicationRunner for initial data loading
+- **Version Control:** GitHub
+- **Lombok** - Reducing boilerplate code
+
+Phase 1 establishes a foundation for future enhancements, ensuring scalability and maintainability.
+
+### **Project Goals**
+1. **Visual Representation** - Create a diagram to outline system functionality.
+2. **Employee Information Display** - Implement an API to retrieve employee details (ID, name, birthday).
+3. **Attendance Tracking & Hours Computation** - Process employee log-ins/log-outs to calculate weekly work hours.
+4. **Gross Salary Calculation** - Compute weekly gross pay based on work hours and hourly rates.
+5. **Net Salary Calculation** - Apply deductions to determine the final net salary.
+6. **Testing & Revisions** - Conduct validation tests to ensure correctness.
+7. **Security Implementation** - Secure sensitive payroll data.
+8. **User-Friendly Interface Development** - Build an intuitive interface for admin and employee interactions.
+10. **Documentation** - Maintain clear project documentation.
 
 ## 🧬 Table of Contents
 
@@ -18,28 +39,31 @@ This phase sets the foundation for future enhancements and will be developed usi
 4. [ Requirement Analysis ](#ra)
 5. [ Proposed Solution ](#solution)
 6. [ Effort Estimation ](#ee)
-7. [ Use Case ](#uc)
+7. [ Use Case Diagram ](#uc)
 8. [ Wireframe ](#wireframe)
 9. [ Project Plan ](#pp)
-10. [ Limitations ](#l)
-11. [ Delimitations ](#d)
-12. [ Project Continuation & MS 2 Foundation ](#ms2)
-13. [ Conclusion ](#conclusion)
+10. [ Limitations & Delimitations ](#ld)
+11. [ Project Continuation & MS 2 Foundation ](#ms2)
+12. [ Conclusion ](#conclusion)
 
 <a name="ris"></a>
 
 ## 📌 RIS Component Links
+
+This project is divided into multiple deliverables through assignment submission. The following components form the backbone of the Milestone 1:
 
 - [Use Case Diagram](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing)
 - [Wireframe](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
 - [Project Plan Timeline](https://tinyurl.com/mr4bjzjm)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
 
+Each component is iteratively improved as development progresses.
+
 
 <a name="scope"></a>
 
 
-## Project Scope (Phase 1)
+## 📌 Project Scope (Phase 1)
 
 The project scope for Phase 1 has been carefully defined to focus on the core requirements of displaying employee information and performing basic salary calculations. This concise scope allows for focused development and efficient delivery within the given timeframe. While a full payroll system requires broader functionality, these are explicitly designated for future phases.
 
@@ -51,22 +75,37 @@ The project scope for Phase 1 has been carefully defined to focus on the core re
 
 **Optional:**
 
-*   Administrator Roles
+*   Administrator E Employee (normal user) Roles
 *   Employee Management Module (Add, Edit, Delete)
 *   Payroll Configuration Module (Deductions)
 *   User Authentication
 
 **Excluded:**
 
-*   Manager Roles
+*   Multi-level role-based access control (RBAC beyond Admin & Employee)
 *   Payroll Configuration Module (Tax Rules, Tax Rules)
 *   Tax Calculations
 *   Reporting
+*   Full HR module integration
 *   Timesheet Management
+*   Fully functional web-based application beyond Phase 1 requirements
 
 ### Justification
 
 The project scope is limited to presenting employee information and basic salary calculation due to the constraints of a single developer and a limited timeframe. More complex features, such as tax calculations and reporting, have been excluded due to their complexity and the need to maintain a manageable scope for Phase 1. The focus is on the core employee experience to ensure that the essential requirements are met effectively. 
+
+#### **1. Data Handling Approach**
+Instead of integrating with the **Google Sheets API**, the project **extracts data manually** from Google Sheets and loads it into the database through:
+- **Spring Boot API Endpoint** to handle data ingestion.
+- **ApplicationRunner** to initialize the database with employee and attendance data.
+
+#### **2. Justification for This Approach**
+- **Efficiency:** Avoids API complexities (authentication, rate limits, error handling) and ensures streamlined payroll computation.
+- **Data Integrity:** A structured database prevents inconsistencies that may arise from collaborative editing in Google Sheets.
+- **Performance Optimization:** Enables fast SQL queries for payroll calculations, rather than relying on external API requests.
+- **Development Focus:** Prioritizes payroll processing logic within the **10-week timeline**, leaving room for enhancements in future phases.
+
+This structured approach ensures the system remains **robust, maintainable, and scalable**, aligning with both project requirements and development constraints.
 
 <a name="ra"></a>
 
@@ -81,7 +120,7 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 - Implement functionality to calculate work hours, gross salary, and net salary.
 - Ensure data accuracy and basic security measures.
 
-#### Identification of Needs
+#### ⚙️ Identification of Needs
 
 The system addresses the following needs from the employee's perspective:
 
@@ -138,9 +177,11 @@ Non-functional requirements are considered based on the developers' preferences,
 - **Week 9-10**: Testing and revisions.
 - **Week 11**: Final submission.
 
+Requirements were identified based on this [link](https://sites.google.com/mmdc.mcl.edu.ph/motorph/home) and through asking our mentor.
+
 <a name="solution"></a>
 
-## Proposed Solution (Detailed Technical Approach)
+## 📌 Proposed Solution (Detailed Technical Approach)
 
 The proposed solution is a web-based application that allows MotorPH to manage employee payroll, focusing on the features relevant to the *employee* in this initial phase. The architecture is a simple three-tier architecture consisting of a presentation layer, a business logic layer, and a data access layer.
 
@@ -172,40 +213,49 @@ This document provides an estimated effort required to develop Phase 1 of the Mo
 - **40-hour workweek** is assumed for effort calculations.
 - Complexity is **moderate**, considering CRUD operations, calculations, and database interactions.
 
-##### Main Tasks
+##### Main Tasks and Subtasks
 
-1. **Conduct Needs Analysis (Requirements Gathering)**
-   - Identify all stakeholders' needs within MotorPH regarding their desired features in a custom payroll system.
+### 1. Conduct Needs Analysis (Requirements Gathering)
+   - Identify stakeholders' needs within MotorPH.
+   - Document explicit Phase 1 requirements.
+   - Assess potential constraints and dependencies.
 
-2. **Design Database Schema for Payroll Data Storage**
-   - Create tables for storing employee details, work hours, salary rates, deductions.
+### 2. Design Database Schema for Payroll Data Storage
+   - Define tables for employee details, work hours, salary rates, and deductions.
+   - Establish relationships between tables.
+   - Implement initial database setup.
 
-3. **Implement Employee Details Presentation**
-   - Develop code to display employee information such as number, name, birthday.
+### 3. Implement Employee Details Presentation
+   - Develop API endpoint for fetching employee details.
+   - Implement UI/UX components for employee information display.
 
-4. **Develop Hours Worked Calculation Logic**
-    – Write algorithms to accurately calculate weekly work hours based on attendance records.
+### 4. Develop Hours Worked Calculation Logic
+   - Extract attendance records.
+   - Write algorithms to accurately calculate weekly work hours.
+   - Ensure data validation for log-in/log-out time accuracy.
 
-5.**Gross Salary Calculation Integration**
-     — Modify calculation logic to retrieve necessary data from the database like hourly wage rates
+### 5. Implement Gross Salary Calculation
+   - Retrieve necessary data from the database (hourly wage rates, overtime rules).
+   - Compute gross salary based on hours worked.
+   - Validate calculations against test cases.
 
-6. **Net Salary Calculation After Deductions**
-     — Apply generic deductions using stored deduction rules from the database
+### 6. Implement Net Salary Calculation (After Deductions)
+   - Apply generic deductions (e.g., tax, benefits).
+   - Store and manage deduction rules within the database.
+   - Ensure correctness of final salary computations.
 
-7. **Testing & Revision**
-      — Conduct thorough testing of all calculations & integrations; revise code as needed
+### 7. Conduct Testing & Revisions
+   - Conduct unit testing
+   - Fix identified bugs, optimize performance and refactoring
 
-8. **Compliance & Security Measures Implementation_
-       — Implement measures ensuring legal compliance & safeguarding sensitive employee data 
+### 8. Develop User-Friendly Interface
+   - Design an intuitive UI/UX for payroll processing.
+   - Ensure accessibility and ease of navigation for administrators and employees.
 
-9. **User-Friendly Interface Development**
-        – Design intuitive UI/UX allowing easy navigation by both administrators & employees accessing pay stubs or updating personal info 
+### 9. Refactoring & Documentation
 
-10. **Backup Strategy Preparation**
-        – Plan regular backups of critical payroll data against potential loss or corruption 
+### 10. Polishing and Final Submission
 
-12. **Documentation of System Processes**
-        – Maintain detailed documentation outlining each step involved in using & maintaining the new system 
 
 ##### Knowledge Needed
 
@@ -241,10 +291,9 @@ Here are estimated times based on complexity and assuming moderate experience:
 5. Integrate Gross Salary Calculation: 10–15 hours  
 6. Implement Net Salary Calculation: 12–18 hours  
 7. Testing & Revision: 45–60 hours  
-8. Integration Planning: 15–25 hours    
-9. User-Friendly Interface Development: 20—30 hours   
-10. Refactoring & Documentation: 5—10 hours    
-12. Polishing and Final Submission: 8—15 hours   
+8. User-Friendly Interface Development: 20—30 hours   
+9. Refactoring & Documentation: 5—10 hours    
+10. Polishing and Final Submission: 8—15 hours   
 
 ##### Estimated Project Completion
 
@@ -253,13 +302,13 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 
 <a name="uc"></a>
 
-## 📌 Use Case
+## 📌 Use Case Diagram
 
 ### Overview
 This document describes the **Use Case Diagram (UCD)** for Phase 1 of the **MotorPH Payroll System**. The system allows users to view employee details, log work hours, and calculate salaries.
 
 #### Actor
-**User**  
+**Employee**  
 - Interacts with the system to retrieve employee details.  
 - Logs work hours.  
 - Triggers payroll calculations.  
@@ -301,7 +350,7 @@ Refer to this [link](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1
 
 ##### Justification
 
-The UCD primarily focuses on the `Employee` actor to align with the Phase 1 requirement of demonstrating employee-facing functionality. However, it is understood that an `Admin/System` actor is essential for configuring and maintaining the system. The Admin/System actor's use cases (e.g., configuring payroll settings, managing users) are planned for future phases but are not fully represented in this initial phase due to scope limitations. The Admin/System actor's role in configuring JWT authentication is included as an optional enhancement.
+The UCD primarily focuses on the `Employee` actor to align with the Phase 1 requirement of demonstrating employee-facing functionality. While the Employee actor is the primary focus of the user interface and demonstrations for Phase 1, it is crucial to recognize that the Admin/System user is the logical and functional foundation of the entire payroll system. The Admin/System user possesses the privilege to configure payroll settings, manage employee data, and initiate payroll calculations for all employees. Without the Admin/System user's initial setup and ongoing management, the Employee's ability to view their information and receive accurate salary calculations would not be possible. Therefore, while the visual emphasis in Phase 1 is on the Employee interface, the underlying logic and system privileges are fundamentally dependent on the Admin/System user.
 
 
 <a name="wireframe"></a>
@@ -378,6 +427,9 @@ The design of the interface, even in this basic phase, is driven by the employee
 
 The **MotorPH Payroll System** aims to streamline payroll processes by managing products, employee details, and salaries. This document outlines the project plan for **Phase 1**, focusing on initial requirements and deliverables.
 
+A structured project plan has been developed in **ClickUp**, breaking down the tasks into manageable sub-tasks with dependencies, ownership, deadlines, and tracking status. The development cycle follows an **iterative approach** to allow continuous refinement and adaptation.
+
+
 #### Objectives
 
 - **Visualization**: Develop a visual representation of the application interface.
@@ -427,9 +479,12 @@ Refer to this [link](https://tinyurl.com/mr4bjzjm) for the project plan timeline
 This project plan outlines the roadmap for developing the **MotorPH Payroll System Phase 1**. By following this plan, we aim to deliver a functional and user-friendly payroll system within the stipulated timeframe.
 
 
-<a name="l"></a>
+<a name="ld"></a>
 
-## 📌 Limitations
+## 📌 Limitations & Delimitations
+
+
+**Limitations**
 
 - **Single Developer**: As the sole developer on this project, all tasks including system design, coding, testing, and debugging will be handled by one person. This may lead to limited bandwidth for tackling issues that arise during development, possibly impacting the speed and efficiency of completion.
 
@@ -444,9 +499,7 @@ This project plan outlines the roadmap for developing the **MotorPH Payroll Syst
 - **Mentor Suggestions**: The developer welcomes mentoring and feedback from the mentor and will actively seek their comments and suggestions during mentoring sessions. All suggestions will be carefully considered, with implementation decisions based on their impact on the project's timeline, feasibility, learning objectives, and available resources.
 
 
-<a name="d"></a>
-
-## 📌 Delimitations
+**Delimitations**
 
 - **Strictly Phase 1 Requirements**: The system will be developed only to meet the objectives defined in Phase 1.
 
@@ -475,21 +528,21 @@ The repository **[cp1](https://github.com/imperionite/cp1)** serves as the **fou
 🚀 **Serial Mentoring Sessions** – The project will undergo **scheduled mentoring sessions** with the assigned mentor to ensure that all requirements are met effectively and any refinements are aligned with best practices.  
 📌 **Incremental Updates** – Future iterations will incorporate refinements based on both **Phase 1 requirements and MS2 objectives**.  
 
-This repository remains a **work in progress**, with continuous development and guidance to ensure its successful completion.  
+This repository remains a **work in progress**, with continuous development and guidance to ensure its successful completion.
 
 ---
 
 <a name="conclusion"></a>
 
-### 💡 Conclusion
+## 📌 Conclusion
 
 The **MotorPH Payroll System Phase 1** project aims to lay the groundwork for a robust, end-to-end payroll management system. Through careful planning and phased implementation, this project addresses the core requirements of displaying employee details, calculating work hours, and determining gross and net salaries. The systematic approach outlined in this project plan ensures that deliverables are met within the given timeline while maintaining quality and usability.
 
-#### 🧠 Final Thought
+### 🧠 Final Thought
 
 Building the foundation of the payroll system in Phase 1 is not just about fulfilling technical requirements but also about understanding user needs and delivering a reliable and user-friendly solution. This phase sets the tone for future enhancements and expansions, ensuring scalability and efficiency for MotorPH.
 
-##### 🚀 Key Takeaways
+### 🚀 Key Takeaways
 
 - **Phased Development Approach**: Breaking down the requirements into smaller phases allows for iterative development, ensuring better focus and quality control.
 - **User-Centric Design**: Designing wireframes and implementing intuitive features ensures that the application is accessible and meets user expectations.
