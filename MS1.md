@@ -1,7 +1,10 @@
-<a name="intro"></a>
-
 # Requirements Identification Submission (RIS) - Phase 1
 by: [Arnel Imperial](https://github.com/imperionite)
+
+
+<a name="intro"></a>
+
+## Introduction
 
 MotorPH is a fictional company aiming to develop a robust end-to-end payroll system to efficiently manage employee details, working hours, salary computations, and associated payroll processes. The goal is to create the payroll system incrementally, adding features in distinct phases.
 
@@ -11,15 +14,17 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 
 1. [ Introduction ](#intro)
 2. [ RIS Components ](#ris)
-3. [ Requirement Analysis ](#ra)
-4. [ Effort Estimation ](#ee)
-5. [ Use Case ](#uc)
-6. [ Wireframe ](#wireframe)
-7. [ Project Plan ](#pp)
-8. [ Limitations ](#l)
-9. [ Delimitations ](#d)
-10. [ Project Continuation & MS 2 Foundation ](#ms2)
-11. [ Conclusion ](#conclusion)
+3. [ Project Scope](#scope)
+4. [ Requirement Analysis ](#ra)
+5. [ Proposed Solution ](#solution)
+6. [ Effort Estimation ](#ee)
+7. [ Use Case ](#uc)
+8. [ Wireframe ](#wireframe)
+9. [ Project Plan ](#pp)
+10. [ Limitations ](#l)
+11. [ Delimitations ](#d)
+12. [ Project Continuation & MS 2 Foundation ](#ms2)
+13. [ Conclusion ](#conclusion)
 
 <a name="ris"></a>
 
@@ -29,6 +34,39 @@ Phase 1 of the project focuses on establishing the fundamental functionality of 
 - [Wireframe](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
 - [Project Plan Timeline](https://tinyurl.com/mr4bjzjm)
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing)
+
+
+<a name="scope"></a>
+
+
+## Project Scope (Phase 1)
+
+The project scope for Phase 1 has been carefully defined to focus on the core requirements of displaying employee information and performing basic salary calculations. This concise scope allows for focused development and efficient delivery within the given timeframe. While a full payroll system requires broader functionality, these are explicitly designated for future phases.
+
+**Included:**
+
+*   Presentation of employee details (Employee Number, Name, Birthday).
+*   Automatic salary calculation (Gross and Net) based on hours worked and predefined deductions.
+*   Simple UI for viewing employee information and calculations.
+
+**Optional:**
+
+*   Administrator Roles
+*   Employee Management Module (Add, Edit, Delete)
+*   Payroll Configuration Module (Deductions)
+*   User Authentication
+
+**Excluded:**
+
+*   Manager Roles
+*   Payroll Configuration Module (Tax Rules, Tax Rules)
+*   Tax Calculations
+*   Reporting
+*   Timesheet Management
+
+### Justification
+
+The project scope for Phase 1 has been carefully defined to focus on the core requirements of displaying employee information and performing basic salary calculations. This concise scope allows for focused development and efficient delivery within the given timeframe. While a full payroll system requires broader functionality, these are explicitly designated for future phases.
 
 <a name="ra"></a>
 
@@ -42,6 +80,19 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 - Develop a Spring Boot-based backend to manage employee details.
 - Implement functionality to calculate work hours, gross salary, and net salary.
 - Ensure data accuracy and basic security measures.
+
+#### Identification of Needs
+
+The primary need is to create a system that can automate payroll processing and manage employee information from the *employee's* perspective.
+
+*   **Need:** Ability to easily view personal information.
+    *   **Why:** To ensure accuracy and transparency.
+*   **Need:** Understand how their salary is calculated.
+    *   **Why:** To build trust and ensure fair compensation.
+*   **Need:** Simple and intuitive interface.
+    *   **Why:** To reduce confusion and increase ease of use.
+*   **Need:** Accessible Information.
+    *   **Why:** Ensure that even employees with limited technical skills can use the system.
 
 #### Functional Requirements
 
@@ -77,7 +128,7 @@ Non-functional requirements are considered based on the developers' preferences,
 ##### Security
 - Employee data should be protected from unauthorized access.
 - API endpoints should have basic JWT-based authentication.
-- Role-based Access Control (RBAC) was not mentioned or emphasized in Phase 1 initial requirements, so it will not be implemented in this project.
+- Role-based Access Control (RBAC) for admin/system user was not mentioned or emphasized in Phase 1 initial requirements, but it might be implemented as an optional requirement. Manager's/approver's access control will not be implemented.
 
 ##### Scalability
 - The system should be designed to accommodate future phases, including more complex payroll rules and additional employee data fields.
@@ -91,16 +142,16 @@ Non-functional requirements are considered based on the developers' preferences,
 - **Week 9-10**: Testing and revisions.
 - **Week 11**: Final submission.
 
-#### Technology Stack
-- **Backend**: Spring Boot (Java 17), Maven
-- **Database**: MySQL
-- **Security**: Spring Security with JWT Authentication
-- **Version Control**: GitHub for source code management
+<a name="solution"></a>
 
-#### Future Considerations
-- Integration with an employee attendance system.
-- Support for different tax and deduction schemes.
-- UI/UX improvements for better employee self-service features.
+## Proposed Solution
+
+The proposed solution is a web-based application that allows MotorPH to manage employee payroll, focusing on the features relevant to the *employee* in this initial phase. The architecture is a simple three-tier architecture consisting of a presentation layer, a business logic layer, and a data access layer.
+
+*   **Backend:** [Specify your backend technology, e.g., Spring Boot with Java] for handling the business logic and data access.
+*   **Frontend:** [Specify your frontend technology, e.g., HTML, CSS, and JavaScript] for creating the user interface.
+*   **Database:** [Specify your database technology, e.g., MySQL] to persist data.
+*   **API:** A RESTful API will be created for the backend and frontend interaction.
 
 <a name="ee"></a>
 
@@ -156,39 +207,36 @@ To accomplish these tasks effectively:
 - Familiarity with database design principles.
 - Understanding of payroll calculation logic.
 - Knowledge of UI/UX design principles.
-- Awareness of compliance regulations affecting payroll processing.
-- Proficiency in programming languages suitable for web applications (e.g., Java or Python).
+- Awareness of compliance regulations affecting payroll processing (optional).
+- Proficiency in programming languages suitable for web applications (e.g., Java or even Python).
 - Experience with security measures like encryption and access controls.
 
 ##### Additional Help Needed
 Additional resources that would be beneficial include:
 1. Technical documentation and guides on database management systems (DBMS) like MySQL or PostgreSQL.
 2. Mentorship from experienced developers familiar with similar projects.
-3. Collaboration tools such as Slack or Trello to manage tasks efficiently across teams.
-4. Testing frameworks like JUnit for comprehensive unit testing.
-5.Integration APIs documentation if integrating with existing HR systems is required 
-6.Security audits by cybersecurity experts to ensure compliance and protect sensitive data 
-7.User interface templates that can be customized according to MotorPH’s branding guidelines 
+3. Collaboration tools such as ClickUp.
+4. Testing frameworks like JUnit, etc. for comprehensive unit testing.
+5. User interface templates that can be customized according to MotorPH’s branding guidelines 
 
 ##### Estimated Time per Task
 Here are estimated times based on complexity and assuming moderate experience:
 
-1.Conduct Needs Analysis: 8–12 hours  
-2.Design Database Schema: 10–15 hours  
-3.Employee Details Presentation: 6–10 hours  
-4.Hours Worked Calculation Logic: 8–12 hours  
-5.Gross Salary Calculation Integration: 10–15 hours  
-6.Net Salary Calculation After Deductions: 12–18 hours  
-7.Testing & Revision: 20–30 hours  
-8.Integration Planning: 15–25 hours   
-9.Compliance Measures Implementation:20—30 hours   
-10.User-Friendly Interface Development: 20—30 hours   
-11.Backup Strategy Preparation: 5—10 hours    
-12.Documentation Process: 8—15 hours   
+1. Conduct Needs Analysis: 8–12 hours  
+2. Design Database Schema: 10–15 hours  
+3. Develop Employee Details Display: 6–10 hours  
+4. Implement Work Hours Calculation: 8–12 hours  
+5. Integrate Gross Salary Calculation: 10–15 hours  
+6. Implement Net Salary Calculation: 12–18 hours  
+7. Testing & Revision: 45–60 hours  
+8. Integration Planning: 15–25 hours    
+9. User-Friendly Interface Development: 20—30 hours   
+10. Refactoring & Documentation: 5—10 hours    
+12. Polishing and Final Submission: 8—15 hours   
 
-##### Estimated Completion
+##### Estimated Project Completion
 
-To determine the number of weeks required to complete my outputs for Phase 1 of the MotorPH Payroll System, I need to consider the estimated total hours of work and the expected weekly time commitment of 7.5 hours per week. Based on the complexity of the project, the development process involves multiple stages, including visualization, employee information display, work hours calculation, payroll computation, and system testing. If I estimate that the entire project will take approximately 75 hours to complete, dividing this by the 7.5-hour weekly commitment results in 10 weeks of work. This aligns closely with the given 11-week timeline, allowing for some flexibility in testing, refinements, and mentoring sessions. By effectively managing my time and following a structured approach, I can ensure that all Phase 1 requirements are met within the expected timeframe while maintaining high-quality output.
+To determine the number of weeks required to complete my outputs for Phase 1 of the MotorPH Payroll System, I need to consider the estimated total hours of work and the expected weekly time commitment of 7.5 hours per week. Based on the complexity of the project, the development process involves multiple stages, including visualization, employee information display, work hours calculation, payroll computation, and system testing. If I estimate that the entire project will take approximately `75 hours to complete`, dividing this by the `7.5-hour weekly` commitment results in **10 weeks of work**. This aligns closely with the given **11-week timeline**, allowing for some flexibility in testing, refinements, and mentoring sessions. By effectively managing my time and following a structured approach, I can ensure that all Phase 1 requirements are met within the expected timeframe while maintaining high-quality output.
 
 
 <a name="uc"></a>
@@ -265,7 +313,7 @@ The wireframe consists of two main sections:
 - **Content**:
   - **Column Headers**:
     - **Employee Number**: Displays unique IDs for employees (e.g., EMP001, EMP002).
-    - **Name**: Shows the full name of each employee (e.g., John Doe, Jane Smith).
+    - **Name**: Shows the full name of each employee (e.g., John Doe, Juan Dela Cruz).
     - **Birthday**: Displays the date of birth in `YYYY-MM-DD` format (e.g., 1990-05-15).
   - **Data Table**: Presents employee details in a tabular format for clear visibility.
 - **Position**: Centrally aligned in the upper half of the wireframe.
@@ -282,9 +330,9 @@ The wireframe consists of two main sections:
   - **Calculate Salary Button**:
     - Triggers the computation of gross salary, deductions, and net salary based on the entered hours.
   - **Result Display**:
-    - **Gross Salary**: Shows the calculated gross salary in currency format (e.g., `$0.00`).
-    - **Deductions**: Displays total deductions applied (e.g., `$0.00`).
-    - **Net Salary**: Shows the final computed salary after deductions (e.g., `$0.00`).
+    - **Gross Salary**: Shows the calculated gross salary in currency format.
+    - **Deductions**: Displays total deductions applied.
+    - **Net Salary**: Shows the final computed salary after deductions.
 - **Position**: Centrally aligned in the lower half of the wireframe for easy access.
 
 ##### Layout and Interaction
@@ -300,8 +348,10 @@ The wireframe consists of two main sections:
   - Simple navigation and interaction.
   - Minimal user input required to complete calculations.
 
-##### Generalization
-This wireframe provides a foundational layout for the **Employee Salary Management System**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation through an intuitive interface. Refer to this [link](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing) for the visual representation of the project's wireframe.
+##### Justification
+This wireframe provides a foundational layout for the **Employee Information and Salary Calculation Wireframe**, ensuring the application is user-friendly and fulfills the Phase 1 requirements. It effectively displays employee details and simplifies salary computation. Refer to this [link](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing) for the visual representation of the project's low-fidelity wireframe.
+
+The design of the interface, even in this basic phase, is driven by the employee's need for clear and accessible information. Future iterations will refine the UI/UX based on feedback and expanded functionality.
 
 
 <a name="pp"></a>
@@ -322,38 +372,7 @@ The **MotorPH Payroll System** aims to streamline payroll processes by managing 
 
 ### Timeline
 
-
-| TASK #  | TASK & SUB-TASK                      | DEPENDENCY | OWNER  | START DATE | END DATE | STATUS     | ACTUAL START | ACTUAL END | NOTES |
-|---------|--------------------------------------|------------|--------|------------|----------|------------|--------------|------------|-------|
-| **1**   | **Conduct Needs Analysis**          | -          |         | 01/28/25   | 02/01/25 | Started    | -            | -          | Identify all stakeholder needs. |
-| **1.1** | Gather payroll processing requirements | -       |         | 01/28/25   | 01/29/25 | Started    | -            | -          | Interview key stakeholders. |
-| **1.2** | Define scope & constraints          | 1.1        |         | 01/30/25   | 02/01/25 | Started    | -            | -          | Document project limitations. |
-| **2**   | **Design Database Schema**          | 1          |         | 02/02/25   | 02/07/25 | Started    | -            | -          | Define employee details, payroll structure. |
-| **2.1** | Create employee details table       | -          |         | 02/02/25   | 02/03/25 | Started    | -           | -          | Store name, birthday, employee number. |
-| **2.2** | Create attendance records table     | 2.1        |         | 02/04/25   | 02/05/25 | Not Started | -            | -          | Store login/logout timestamps. |
-| **2.3** | Define payroll calculations table   | 2.2        |         | 02/06/25   | 02/07/25 | Not Started | -            | -          | Store salary, deductions, tax rates. |
-| **3**   | **Develop Employee Details Display** | 2         |         | 02/08/25   | 02/12/25 | Not Started | -            | -          | Implement UI for displaying employee data. |
-| **3.1** | Design employee details API        | -           |         | 02/08/25   | 02/09/25 | Not Started | -            | -          | Implement REST API endpoints. |
-| **3.2** | Create frontend for employee list   | 3.1        |         | 02/10/25   | 02/12/25 | Not Started | -            | -          | Display employee details. |
-| **4**   | **Implement Work Hours Calculation** | 3         |         | 02/13/25   | 02/18/25 | Not Started | -            | -          | Process attendance records, compute hours. |
-| **4.1** | Fetch and parse attendance records | -           |         | 02/13/25   | 02/14/25 | Not Started | -            | -          | Extract timestamps. |
-| **4.2** | Develop work hours computation logic | 4.1       |         | 02/15/25   | 02/16/25 | Not Started | -            | -          | Calculate hours worked per week. |
-| **4.3** | Validate calculations with test data | 4.2       |         | 02/17/25   | 02/18/25 | Not Started | -            | -          | Ensure accuracy of calculations. |
-| **5**   | **Integrate Gross Salary Calculation** | 4       |         | 02/19/25   | 02/24/25 | Not Started | -            | -          | Apply hourly wage logic. |
-| **6**   | **Implement Net Salary Calculation** | 5         |         | 02/25/25   | 03/02/25 | Not Started | -            | -          | Apply deductions and finalize payroll computation. |
-| **6.1** | Implement tax deductions            | -          |         | 02/25/25   | 02/26/25 | Not Started | -            | -          | Apply tax rates. |
-| **6.2** | Apply generic deductions            | 6.1      |           | 02/27/25   | 02/28/25 | Not Started | -            | -          | Compute deductions. |
-| **6.3** | Compute final net salary            | 6.2        |         | 03/01/25   | 03/02/25 | Not Started | -            | -          | Generate take-home pay. |
-| **7**   | **Testing & Revisions**             | 6          |         | 03/03/25   | 03/09/25 | Not Started | -            | -          | Debug and validate payroll computations. |
-| **7.1** | Conduct unit testing                | -          |         | 03/03/25   | 03/05/25 | Not Started | -            | -          | Test individual modules. |
-| **7.2** | Perform integration testing         | 7.1        |         | 03/06/25   | 03/07/25 | Not Started | -            | -          | Validate all components together. |
-| **7.3** | Fix identified bugs & optimize performance | 7.2  |        | 03/08/25   | 03/09/25 | Not Started | -            | -          | Ensure stability. |
-| **8**   | **Implement Compliance & Security Measures** | 6  |        | 03/10/25   | 03/13/25 | Not Started | -            | -          | Add data protection, user authentication. |
-| **9**   | **Develop User-Friendly Interface**  | 7,8        |        | 03/14/25   | 03/17/25 | Not Started | -            | -          | Enhance UI for better usability. |
-| **9.1** | Design UI layouts                   | -          |         | 03/14/25   | 03/15/25 | Not Started | -            | -          | Define layouts. |
-| **9.2** | Implement frontend components       | 9.1        |         | 03/16/25   | 03/17/25 | Not Started | -            | -          | Apply styling and interaction. |
-| **10**  | **Refactoring & Documentation**     | 8          |         | 03/18/25   | 03/20/25 | Not Started | -            |            | Refactoring & Prepare technical documentation |
-| **11**  | **Final Submission**                | 10         |         | 03/21/25   | 03/24/25 | Not Started | -            | -          | Final Submission |
+Refer to this [link](https://tinyurl.com/mr4bjzjm) for the project plan timeline of the project 
 
 
 #### **Project Summary**
