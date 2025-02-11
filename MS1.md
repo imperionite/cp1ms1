@@ -348,7 +348,7 @@ The wireframe provides a visual representation of the user interface for these c
 
 ## 📌 Project Plan
 
-_(Revised Project Plan - Addressing Teacher's Feedback)_
+_[Project plan timeline link](https://tinyurl.com/mr4bjzjm)_
 
 The detailed project plan, including task durations in hours, has been incorporated into the [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing). This worksheet provides a comprehensive view of the project timeline, task dependencies, and resource allocation.
 
