@@ -156,24 +156,22 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 -   Compute net salary after deductions.
 -   Ensure accurate calculations based on predefined rules.
 
-#### Non-Functional Requirements
+#### Non-Functional Considerations
 
-Non-functional requirements are considered based on the developers' preferences, but only the aspects strictly stated in the Phase 1 requirements are implemented. In fact, non-functional requirements are not explicitly mentioned in the Phase 1 task.
+While not explicitly mandated in the initial Phase 1 requirements, certain non-functional aspects have been considered to ensure a solid foundation for future development and a reasonable user experience. These considerations are implemented at a basic level, focusing on efficiency and security best practices.
 
 ##### Performance
 
--   The system should handle a reasonable number of employees efficiently.
--   API responses should be optimized for quick retrieval of employee records and salary calculations.
+*   The system is designed to handle a moderate number of employee records efficiently. API responses are optimized for reasonably quick retrieval of employee data and salary calculations. These optimizations lay the groundwork for handling larger datasets in future phases.
 
 ##### Security
 
--   Employee data should be protected from unauthorized access.
--   API endpoints should have basic JWT-based authentication.
--   Role-based Access Control (RBAC) for admin/system user was not mentioned or emphasized in Phase 1 initial requirements, but it might be implemented as an optional requirement. Manager's/approver's access control will not be implemented.
+*   Employee data is protected through basic measures to prevent unauthorized access. API endpoints include JWT-based authentication to secure access. Role-Based Access Control (RBAC) for admin/system user is implemented to showcase the application's security, though Manager/Approver level access control is outside the scope of Phase 1.
 
 ##### Scalability
 
--   The system should be designed to accommodate future phases, including more complex payroll rules and additional employee data fields.
+*   The system architecture is designed with future scalability in mind, allowing for the accommodation of more complex payroll rules and additional employee data fields in subsequent phases. This includes using a relational database and a modular code structure.
+
 
 #### Deliverables
 
