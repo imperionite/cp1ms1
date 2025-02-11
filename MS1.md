@@ -6,9 +6,9 @@ by: [Arnel Imperial](https://github.com/imperionite)
 
 ## Introduction
 
-MotorPH is a fictional company aiming to develop a robust end-to-end payroll system to efficiently manage employee details, working hours, salary computations, and associated payroll processes. The goal is to create the payroll system incrementally, adding features in distinct phases.
+This document outlines the project plan, requirements, design, and implementation details for Phase 1 of the MotorPH Payroll System. The goal of this phase is to develop a foundational system for presenting employee information and calculating salaries, with an optional enhancement for secure authentication.
 
-Phase 1 of the project focuses on establishing the fundamental functionality of the payroll system, which includes presenting basic employee information, calculating hours worked, and determining salary based on working hours and basic deductions. This phase sets the foundation for future enhancements and will be developed using a Java-based framework, specifically Spring Boot.
+This phase sets the foundation for future enhancements and will be developed using a Java-based framework, specifically Spring Boot.
 
 ## 🧬 Table of Contents
 
@@ -66,7 +66,7 @@ The project scope for Phase 1 has been carefully defined to focus on the core re
 
 ### Justification
 
-The project scope for Phase 1 has been carefully defined to focus on the core requirements of displaying employee information and performing basic salary calculations. This concise scope allows for focused development and efficient delivery within the given timeframe. While a full payroll system requires broader functionality, these are explicitly designated for future phases.
+The project scope is limited to presenting employee information and basic salary calculation due to the constraints of a single developer and a limited timeframe. More complex features, such as tax calculations and reporting, have been excluded due to their complexity and the need to maintain a manageable scope for Phase 1. The focus is on the core employee experience to ensure that the essential requirements are met effectively. 
 
 <a name="ra"></a>
 
@@ -83,16 +83,12 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 
 #### Identification of Needs
 
-The primary need is to create a system that can automate payroll processing and manage employee information from the *employee's* perspective.
+The system addresses the following needs from the employee's perspective:
 
-*   **Need:** Ability to easily view personal information.
-    *   **Why:** To ensure accuracy and transparency.
-*   **Need:** Understand how their salary is calculated.
-    *   **Why:** To build trust and ensure fair compensation.
-*   **Need:** Simple and intuitive interface.
-    *   **Why:** To reduce confusion and increase ease of use.
-*   **Need:** Accessible Information.
-    *   **Why:** Ensure that even employees with limited technical skills can use the system.
+- **Ability to easily view personal information**: To ensure accuracy and transparency, empowering employees to verify their data.
+- **Understand how their salary is calculated**: To build trust and ensure fair compensation by providing a clear breakdown of earnings and deductions.
+- **Simple and intuitive interface**: To ensure ease of use for all employees, regardless of their technical skills.
+- **Secure Access**: To protect personal and financial information from unauthorized access using a state-of-the-art way of authenticating. To build trust and integrity to the end users and clients
 
 #### Functional Requirements
 
@@ -144,14 +140,23 @@ Non-functional requirements are considered based on the developers' preferences,
 
 <a name="solution"></a>
 
-## Proposed Solution
+## Proposed Solution (Detailed Technical Approach)
 
 The proposed solution is a web-based application that allows MotorPH to manage employee payroll, focusing on the features relevant to the *employee* in this initial phase. The architecture is a simple three-tier architecture consisting of a presentation layer, a business logic layer, and a data access layer.
 
-*   **Backend:** [Specify your backend technology, e.g., Spring Boot with Java] for handling the business logic and data access.
-*   **Frontend:** [Specify your frontend technology, e.g., HTML, CSS, and JavaScript] for creating the user interface.
-*   **Database:** [Specify your database technology, e.g., MySQL] to persist data.
+*   **Backend:** Spring Boot with Java. Spring Boot provides a robust and scalable framework for developing the REST API and handling business logic.
+    - Justification: Spring Boot's auto-configuration and embedded server simplify development and deployment, enabling efficient use of the limited timeframe.
+
+*   **Frontend:** HTML, CSS, and JavaScript but React library might be considered.
+    - Justification: These technologies provide a simple and cross-platform way to create a user interface.
+
+*   **Database:** MySQL to persist employee data, salary information, and user credentials.
+    - Justification: MySQL is a reliable and open-source database that meets the project's data storage needs.
+
 *   **API:** A RESTful API will be created for the backend and frontend interaction.
+
+*   **JWT Authentication**: JSON Web Tokens will be used for authentication (optional).
+    - Justification: JWT provides a stateless and secure way to authenticate users, enhancing the system's security. The Auth0 library will be used to simplify JWT handling.
 
 <a name="ee"></a>
 
@@ -203,7 +208,9 @@ This document provides an estimated effort required to develop Phase 1 of the Mo
         – Maintain detailed documentation outlining each step involved in using & maintaining the new system 
 
 ##### Knowledge Needed
+
 To accomplish these tasks effectively:
+
 - Familiarity with database design principles.
 - Understanding of payroll calculation logic.
 - Knowledge of UI/UX design principles.
@@ -212,7 +219,9 @@ To accomplish these tasks effectively:
 - Experience with security measures like encryption and access controls.
 
 ##### Additional Help Needed
+
 Additional resources that would be beneficial include:
+
 1. Technical documentation and guides on database management systems (DBMS) like MySQL or PostgreSQL.
 2. Mentorship from experienced developers familiar with similar projects.
 3. Collaboration tools such as ClickUp.
@@ -220,6 +229,9 @@ Additional resources that would be beneficial include:
 5. User interface templates that can be customized according to MotorPH’s branding guidelines 
 
 ##### Estimated Time per Task
+
+Refer to this [link](https://tinyurl.com/mr4bjzjm) for the project's timeline. 
+
 Here are estimated times based on complexity and assuming moderate experience:
 
 1. Conduct Needs Analysis: 8–12 hours  
@@ -244,7 +256,7 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 ## 📌 Use Case
 
 ### Overview
-This document describes the **Use Case Diagram** for Phase 1 of the **MotorPH Payroll System**. The system allows users to view employee details, log work hours, and calculate salaries.
+This document describes the **Use Case Diagram (UCD)** for Phase 1 of the **MotorPH Payroll System**. The system allows users to view employee details, log work hours, and calculate salaries.
 
 #### Actor
 **User**  
@@ -255,37 +267,41 @@ This document describes the **Use Case Diagram** for Phase 1 of the **MotorPH Pa
 ##### Use Cases
 
 ###### View Employee Details
-**Actor:** User  
+**Actor:** Employee  
 **Description:** Retrieves and displays employee details such as employee number, name, and birthday.  
 **Preconditions:** Employee records exist in the system.  
 **Postconditions:** Employee details are displayed successfully.  
 
 ###### Log Work Hours
-**Actor:** User  
+**Actor:** Employee 
 **Description:** Users log their work hours by recording clock-in and clock-out times.  
 **Preconditions:** The user is recognized by the system.  
 **Postconditions:** Work hours are stored for payroll computation.  
 
 ###### Calculate Weekly Work Hours
-**Actor:** User  
+**Actor:** Employee 
 **Description:** Computes the total number of hours worked in a week based on recorded log-in and log-out times.  
 **Preconditions:** Work hour records must be available.  
 **Postconditions:** The system displays the calculated weekly work hours.  
 
 ###### Compute Gross Salary
-**Actor:** User  
+**Actor:** Employee  
 **Description:** Calculates the gross weekly salary based on the total hours worked and the predefined pay rate.  
 **Preconditions:** Work hour records are available.  
 **Postconditions:** The system displays the gross salary.  
 
 ###### Compute Net Salary
-**Actor:** User  
+**Actor:** Employee 
 **Description:** Computes the net weekly salary after applying generic deductions.  
 **Preconditions:** Gross salary calculation must be completed.  
 **Postconditions:** The system displays the net salary after deductions.  
 
 ##### Use Case Diagram
 Refer to this [link](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing) for the use case diagram representation of the project.
+
+##### Justification
+
+The UCD primarily focuses on the `Employee` actor to align with the Phase 1 requirement of demonstrating employee-facing functionality. However, it is understood that an `Admin/System` actor is essential for configuring and maintaining the system. The Admin/System actor's use cases (e.g., configuring payroll settings, managing users) are planned for future phases but are not fully represented in this initial phase due to scope limitations. The Admin/System actor's role in configuring JWT authentication is included as an optional enhancement.
 
 
 <a name="wireframe"></a>
