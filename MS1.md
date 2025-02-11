@@ -352,9 +352,7 @@ _[Project plan timeline link](https://tinyurl.com/mr4bjzjm)_
 
 A structured project plan has been developed in ClickUp, breaking down the tasks into manageable sub-tasks with dependencies, ownership, deadlines, and tracking status. The development cycle follows an iterative approach to allow continuous refinement and adaptation.
 
-
 <a name="ld"></a>
-
 
 ## 📌 Limitations & Delimitations
 
@@ -369,12 +367,20 @@ Due to the time constraints and the individual nature of the project, certain li
 
 ## 📌 Project Continuation & MS 2 Foundation
 
-Phase 1 lays the foundation for future development. MS2 will focus on:
+The repository **[cp1](https://github.com/imperionite/cp1)** serves as the **foundation for Milestone 2 (MS2)** of the MotorPH Payroll System. While Phase 1 is still in development, this repository already includes both **explicit and implicit requirements** for Phase 1, ensuring a structured approach for future enhancements.
 
-- Implementing additional modules such as Timesheet Management and Reporting.
-- Integrating with external systems for automated data ingestion.
-- Enhancing the UI/UX for improved user experience.
-- Implementing more robust security measures.
+### **Current Status:**
+
+✔️ **Phase 1 requirements setup** – The core functionalities have been structured according to the initial specifications.  
+✔️ **Explicit & implicit requirements considered** – Some additional design elements have been planned for seamless expansion.  
+✔️ **Ongoing development** – The project is actively being improved and refined based on requirements and feedback.
+
+### **Next Steps:**
+
+🚀 **Serial Mentoring Sessions** – The project will undergo **scheduled mentoring sessions** with the assigned mentor to ensure that all requirements are met effectively and any refinements are aligned with best practices.  
+📌 **Incremental Updates** – Future iterations will incorporate refinements based on both **Phase 1 requirements and MS2 objectives**.
+
+This repository remains a **work in progress**, with continuous development and guidance to ensure its successful completion.
 
 <a name="conclusion"></a>
 
