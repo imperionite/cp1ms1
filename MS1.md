@@ -322,31 +322,36 @@ This document describes the **Use Case Diagram (UCD)** for Phase 1 of the **Moto
 ##### Use Cases
 
 ###### View Employee Details
-**Actor:** Employee  
+**Actor:** Employee
+
 **Description:** Retrieves and displays employee details such as employee number, name, and birthday.  
 **Preconditions:** Employee records exist in the system.  
 **Postconditions:** Employee details are displayed successfully.  
 
 ###### Log Work Hours
 **Actor:** Employee 
+
 **Description:** Users log their work hours by recording clock-in and clock-out times.  
 **Preconditions:** The user is recognized by the system.  
 **Postconditions:** Work hours are stored for payroll computation.  
 
 ###### Calculate Weekly Work Hours
 **Actor:** Employee 
+
 **Description:** Computes the total number of hours worked in a week based on recorded log-in and log-out times.  
 **Preconditions:** Work hour records must be available.  
 **Postconditions:** The system displays the calculated weekly work hours.  
 
 ###### Compute Gross Salary
 **Actor:** Employee  
+
 **Description:** Calculates the gross weekly salary based on the total hours worked and the predefined pay rate.  
 **Preconditions:** Work hour records are available.  
 **Postconditions:** The system displays the gross salary.  
 
 ###### Compute Net Salary
 **Actor:** Employee 
+
 **Description:** Computes the net weekly salary after applying generic deductions.  
 **Preconditions:** Gross salary calculation must be completed.  
 **Postconditions:** The system displays the net salary after deductions.  
@@ -374,7 +379,7 @@ The wireframe consists of two main sections:
 ##### Key Sections and Description
 
 ###### **1. Header**
-- **Title**: "Employee Salary Management System"
+- **Title**: "Employee Information and Salary Calculation"
   - Positioned at the top of the interface.
   - Clearly indicates the purpose of the application.
   - Provides a professional and user-friendly introduction to the system.
