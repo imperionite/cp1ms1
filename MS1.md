@@ -350,7 +350,11 @@ The wireframe provides a visual representation of the user interface for these c
 
 _[Project plan timeline link](https://tinyurl.com/mr4bjzjm)_
 
-The detailed project plan, including task durations in hours, has been incorporated into the [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing). This worksheet provides a comprehensive view of the project timeline, task dependencies, and resource allocation.
+A structured project plan has been developed in ClickUp, breaking down the tasks into manageable sub-tasks with dependencies, ownership, deadlines, and tracking status. The development cycle follows an iterative approach to allow continuous refinement and adaptation.
+
+
+<a name="ld"></a>
+
 
 ## 📌 Limitations & Delimitations
 
