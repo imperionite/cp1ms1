@@ -10,17 +10,21 @@ This document outlines the project plan, requirements, design, and implementatio
 
 The repository [imperionite/cp1](https://github.com/imperionite/cp1) serves as the initial implementation, focusing on setting up both **explicit and implicit requirements** of the project. The system is continuously developed and will undergo **serial mentoring sessions** with the assigned mentor to refine its features and ensure its alignment with best practices.
 
-**Technology Stack**
+### ⚙️ **Technology Stack**
+
 - **Backend:** Java 17, Spring Boot 3.4.2
 - **Database:** MySQL (Relational Database for payroll data storage)
 - **Security:** JWT Authentication, Role-Based Access Control
 - **Data Ingestion:** Spring Boot API & ApplicationRunner for initial data loading
 - **Version Control:** GitHub
 - **Lombok** - Reducing boilerplate code
+- **Version Control**: Git
+- **Project Management**: [ClickUp](https://tinyurl.com/mr4bjzjm)
 
 Phase 1 establishes a foundation for future enhancements, ensuring scalability and maintainability.
 
-### **Project Goals**
+### ⚙️ **Project Goals**
+
 1. **Visual Representation** - Create a diagram to outline system functionality.
 2. **Employee Information Display** - Implement an API to retrieve employee details (ID, name, birthday).
 3. **Attendance Tracking & Hours Computation** - Process employee log-ins/log-outs to calculate weekly work hours.
@@ -30,6 +34,16 @@ Phase 1 establishes a foundation for future enhancements, ensuring scalability a
 7. **Security Implementation** - Secure sensitive payroll data.
 8. **User-Friendly Interface Development** - Build an intuitive interface for admin and employee interactions.
 10. **Documentation** - Maintain clear project documentation.
+
+### ⚙️ **Identification of Needs**
+
+The system addresses the following needs from the employee's perspective:
+
+- **Ability to easily view personal information**: To ensure accuracy and transparency, empowering employees to verify their data.
+- **Understand how their salary is calculated**: To build trust and ensure fair compensation by providing a clear breakdown of earnings and deductions.
+- **Simple and intuitive interface**: To ensure ease of use for all employees, regardless of their technical skills.
+- **Secure Access**: To protect personal and financial information from unauthorized access using a state-of-the-art way of authenticating. To build trust and integrity to the end users and clients
+
 
 ## 🧬 Table of Contents
 
@@ -75,7 +89,7 @@ The project scope for Phase 1 has been carefully defined to focus on the core re
 
 **Optional:**
 
-*   Administrator E Employee (normal user) Roles
+*   Administrator and Employee (normal user) Roles
 *   Employee Management Module (Add, Edit, Delete)
 *   Payroll Configuration Module (Deductions)
 *   User Authentication
@@ -120,14 +134,6 @@ MotorPH is developing an end-to-end payroll system to manage employee details, w
 - Implement functionality to calculate work hours, gross salary, and net salary.
 - Ensure data accuracy and basic security measures.
 
-#### ⚙️ Identification of Needs
-
-The system addresses the following needs from the employee's perspective:
-
-- **Ability to easily view personal information**: To ensure accuracy and transparency, empowering employees to verify their data.
-- **Understand how their salary is calculated**: To build trust and ensure fair compensation by providing a clear breakdown of earnings and deductions.
-- **Simple and intuitive interface**: To ensure ease of use for all employees, regardless of their technical skills.
-- **Secure Access**: To protect personal and financial information from unauthorized access using a state-of-the-art way of authenticating. To build trust and integrity to the end users and clients
 
 #### Functional Requirements
 
@@ -213,7 +219,7 @@ This document provides an estimated effort required to develop Phase 1 of the Mo
 - **40-hour workweek** is assumed for effort calculations.
 - Complexity is **moderate**, considering CRUD operations, calculations, and database interactions.
 
-##### Main Tasks and Subtasks
+### Main Tasks and Subtasks
 
 ### 1. Conduct Needs Analysis (Requirements Gathering)
    - Identify stakeholders' needs within MotorPH.
@@ -458,15 +464,7 @@ Refer to this [link](https://tinyurl.com/mr4bjzjm) for the project plan timeline
   - Gross Salary Calculation
   - Net Salary Calculation
 - **Testing Documentation**: Test cases, results, and bug fixes.
-- **Final Application**: Fully functional application meeting Phase 1 requirements.
-
-##### Tools and Technologies
-
-- **Programming Language**: Java
-- **Framework**: Spring Boot
-- **Database**: MySQL
-- **Version Control**: Git
-- **Project Management**: [ClickUp](https://tinyurl.com/mr4bjzjm)
+- **Final Application**: Functional application meeting Phase 1 requirements.
 
 ##### Risk Management
 
