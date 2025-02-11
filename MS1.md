@@ -156,7 +156,7 @@ The proposed solution is a web-based application that allows MotorPH to manage e
 *   **API:** A RESTful API will be created for the backend and frontend interaction.
 
 *   **JWT Authentication**: JSON Web Tokens will be used for authentication (optional).
-    - Justification: JWT provides a stateless and secure way to authenticate users, enhancing the system's security. The Auth0 library will be used to simplify JWT handling.
+    - Justification: JWT provides a stateless and secure way to authenticate users, enhancing the system's security.
 
 <a name="ee"></a>
 
@@ -309,7 +309,7 @@ The UCD primarily focuses on the `Employee` actor to align with the Phase 1 requ
 ## 📌 Wireframe
 
 ### Overview
-This document provides a detailed explanation of the wireframe design for the **Employee Salary Management System**. The wireframe showcases the visual layout and interaction flow of the application, focusing on Phase 1 requirements, which include presenting employee information and calculating salaries.
+This document provides a detailed explanation of the wireframe design for the **Employee Information and Salary Calculation Management System**. The wireframe showcases the visual layout and interaction flow of the application, focusing on Phase 1 requirements, which include presenting employee information and calculating salaries.
 
 #### Wireframe Overview
 The wireframe consists of two main sections:
