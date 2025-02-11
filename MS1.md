@@ -57,7 +57,7 @@ The system addresses the following needs from the employee's perspective:
 9.  [Project Plan](#pp)
 10. [Limitations & Delimitations](#ld)
 11. [Project Continuation & MS 2 Foundation](#ms2)
-12. [Key Justification](#kj)
+12. [Key Justifications](#kj)
 13. [Conclusion](#conclusion)
 
 <a name="ris"></a>
