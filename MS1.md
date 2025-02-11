@@ -104,7 +104,8 @@ The project scope for Phase 1 has been carefully defined to focus on the core re
 ### Justification
 
 The project scope is limited to presenting employee information and basic salary calculation due to several factors. Firstly, as an individual developer, the constraints of a limited timeframe necessitate a focused approach to ensure the core employee experience is delivered effectively.
-While the recommendation to join a group was considered, the decision to proceed individually allows for a more streamlined development process and a greater degree of control over the project's direction within the given timeframe. More complex features, such as tax calculations and reporting, have been excluded due to their inherent complexity and the need to maintain a manageable scope for this initial phase. The priority is to meet the essential requirements efficiently and build a solid foundation for future expansion.
+While the recommendation to join a group was considered, the decision to proceed individually allows for a more streamlined development process and a greater degree of control over the project's direction within the given timeframe. More complex and implicit features have been excluded 
+due to their inherent complexity and the need to maintain a manageable scope for this initial phase. The priority is to meet the essential requirements efficiently and build a solid foundation for future expansion.
 
 #### **1. Data Handling Approach**
 
