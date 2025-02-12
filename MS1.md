@@ -290,6 +290,12 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 
 [![UCD](https://drive.google.com/uc?export=view&id=1fy22zh23FYo-Yga100zrazLIi1KqGD1Y)](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing)
 
+<object data="https://drive.google.com/uc?export=view&id=1fy22zh23FYo-Yga100zrazLIi1KqGD1Y" type="application/pdf" width="700px" height="700px">
+    <embed src="https://drive.google.com/uc?export=view&id=1fy22zh23FYo-Yga100zrazLIi1KqGD1Y">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing">Download PDF</a>.</p>
+    </embed>
+</object>
+
 This Use Case Diagram represents the **core functionalities** included within the **scope of Phase 1**. Given the limited scope of Phase 1 (employee information and salary calculation), the diagram focuses on the key user interactions related to these features. A more comprehensive UCD will be developed in future phases as the system's functionality expands.
 
 This diagram includes two actors
