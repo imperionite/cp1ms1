@@ -305,7 +305,7 @@ This diagram includes two actors
 
 ## 📌 Wireframe
 
-[![Wireframe](https://drive.google.com/uc?export=view&id=10OZjyH9laNeh6vLhDrJok3CiTSQ4dpQt)](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
+[<img src="https://drive.google.com/uc?export=view&id=10OZjyH9laNeh6vLhDrJok3CiTSQ4dpQt" width="800" height="800"/>](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
 
 The wireframe has been updated to reflect the core functionalities included in Phase 1. It primarily focuses on the UI elements required for:
 
@@ -320,7 +320,7 @@ The wireframe provides a visual representation of the user interface for these c
 
 ## 📌 Project Plan
 
-[![Wireframe](https://drive.google.com/uc?export=view&id=1cj1rmc9ZIcZzOdx7alc1hA9vXTBH5DXb)](https://tinyurl.com/mr4bjzjm)
+[<img src="https://drive.google.com/uc?export=view&id=1cj1rmc9ZIcZzOdx7alc1hA9vXTBH5DXb" width="900" height="900"/>](https://tinyurl.com/mr4bjzjm)
 
 A structured project plan has been developed in ClickUp, breaking down the tasks into manageable sub-tasks with dependencies, ownership, deadlines, and tracking status. The development cycle follows an iterative approach to allow continuous refinement and adaptation.
 
