@@ -288,7 +288,6 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 
 ## 📌 Use Case Diagram
 
-
 ![UCD](https://drive.google.com/uc?id=1fy22zh23FYo-Yga100zrazLIi1KqGD1Y)
 
 This Use Case Diagram represents the **core functionalities** included within the **scope of Phase 1**. Given the limited scope of Phase 1 (employee information and salary calculation), the diagram focuses on the key user interactions related to these features. A more comprehensive UCD will be developed in future phases as the system's functionality expands.
@@ -343,8 +342,8 @@ To ensure a clear understanding of the boundaries of this Phase 1 implementation
 **Delimitations**
 
 - **Focus on Mandatory Phase 1 Requirements:** The system will be developed strictly to meet the objectives defined in the Phase 1 requirements. Features and functionalities beyond those requirements are explicitly excluded from this phase.
-- **Limited User Roles:** Phase 1 includes only basic employee details and salary calculations. Basic user roles, such as admin or system user and employee-level will be implemented though not emphasized. Based on my Phase 1 Use Case Diagram that prioritizes the Employee actor to showcase employee-facing functionalities. 
-While the Admin/System user's actions aren't visually emphasized, their role is essential for system configuration, data management, and payroll initiation – prerequisites for employee access and accurate calculations. Therefore, despite Phase 1's visual focus on the Employee, the underlying system logic is intrinsically linked to the Admin/System user.
+- **Limited User Roles:** Phase 1 includes only basic employee details and salary calculations. Basic user roles, such as admin or system user and employee-level will be implemented though not emphasized. Based on my Phase 1 Use Case Diagram that prioritizes the Employee actor to showcase employee-facing functionalities.
+  While the Admin/System user's actions aren't visually emphasized, their role is essential for system configuration, data management, and payroll initiation – prerequisites for employee access and accurate calculations. Therefore, despite Phase 1's visual focus on the Employee, the underlying system logic is intrinsically linked to the Admin/System user.
 - **Data Structure Focused on Core Information:** The MySQL database will be used solely to store employee information (employee number, name, birthday) and work hours for calculation purposes. Additional data models or relationships (such as employee benefits, payroll history, or detailed logs) are excluded from Phase 1.
 - **Minimal User Interface:** Phase 1 focuses on backend functionality, and the user interface will be minimal in design. The application will operate primarily as a backend service, with employee data presented in a simple and functional format. There will be limited focus on aesthetics or advanced user interface features.
 - **Limited Error Handling and Security:** While basic error handling will be implemented, comprehensive error management and security measures will not be addressed in Phase 1. The project focuses on implementing core functional calculations without implementing complex security features.
