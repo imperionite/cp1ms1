@@ -6,7 +6,7 @@ by: [Arnel Imperial](https://github.com/imperionite)
 
 ## 📌 Introduction
 
-This document outlines the project plan, requirements, design, and implementation details for Phase 1 of the MotorPH Payroll System. The goal of this phase is to develop a foundational system for presenting employee information and calculating salaries, with an optional enhancement for secure authentication.
+This document outlines the _team details (as a sole member), MotorPH requirements, effort estimate, use case diagram (UCD), wireframe, project plan, and other essential details for Phase 1 of the MotorPH Payroll System_. The goal of this phase is to develop a foundational system for presenting employee information and calculating salaries, with an optional enhancement for secure authentication.
 
 The repository [imperionite/cp1](https://github.com/imperionite/cp1) serves as the initial implementation, focusing on setting up both **explicit and implicit requirements** of the project. The system is continuously developed and will undergo **serial mentoring sessions** with the assigned mentor to refine its features and ensure its alignment with best practices.
 
