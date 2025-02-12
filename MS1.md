@@ -326,14 +326,26 @@ A structured project plan has been developed in ClickUp, breaking down the tasks
 
 <a name="ld"></a>
 
-## 📌 Limitations & Delimitations
+## 📌 Scope Delimitations and Known Limitations
 
-Due to the time constraints and the individual nature of the project, certain limitations have been identified:
+To ensure a clear understanding of the boundaries of this Phase 1 implementation, this section outlines the specific functionalities that are explicitly excluded from the scope of this phase (Scope Delimitations), as well as acknowledges the known areas for future improvement in the current implementation (Known Limitations). This is intended to manage expectations and provide context for future development efforts.
 
-- **Limited UI Functionality:** The UI will be basic and primarily focused on displaying data.
-- **Manual Data Extraction:** Data is manually extracted, which may not be scalable in the long term.
-- **Generic Deductions:** Only standard deductions are considered in Phase 1.
-- **Single User Testing:** Testing is primarily conducted by the developer.
+**Limitations**
+
+- **Single Developer:** As the sole developer on this project, all tasks including system design, coding, testing, and debugging are handled by one person. This may lead to limited bandwidth for tackling issues that arise during development, potentially impacting the speed and efficiency of completion.
+- **Database Constraints:** The MySQL database is used to store employee data, including employee details and work hours, and runs in a Docker container. However, the database setup is limited to Phase 1 requirements and does not include features such as data analytics, reporting, integration with external systems, stored procedures, triggers, or scheduled tasks.
+- **Time Constraints:** With an 11-week timeframe, the focus is on ensuring that the core functionality of employee information presentation, work hour, and salary calculations is achieved. Time is not allocated to expanding the system or addressing features not specified in Phase 1.
+- **Testing Limitations:** Testing is concentrated on validating the functionality of employee data presentation, work hour calculation, and salary computation. System-wide testing, user acceptance testing, load testing, stress testing, performance optimization, or comprehensive security testing are not performed in this phase.
+- **Optional Features:** Any features that are not explicitly stated in the Phase 1 requirements are considered optional elements. Their implementation depends on time availability after fulfilling all mandatory requirements and is at the discretion of the developer, based on available time and resources.
+- **Reliance on Mentor Suggestions:** The developer welcomes mentoring and feedback from the mentor and actively seeks their comments and suggestions during mentoring sessions. However, implementation decisions are based on their impact on the project's timeline, feasibility, learning objectives, and available resources.
+
+**Delimitations**
+
+- **Focus on Mandatory Phase 1 Requirements:** The system will be developed strictly to meet the objectives defined in the Phase 1 requirements. Features and functionalities beyond those requirements are explicitly excluded from this phase.
+- **Limited User Roles:** Phase 1 includes only basic employee details and salary calculations. While basic user roles, such as admin or system user, may be implemented, employee-level access and management will not be emphasized in this phase.
+- **Data Structure Focused on Core Information:** The MySQL database will be used solely to store employee information (employee number, name, birthday) and work hours for calculation purposes. Additional data models or relationships (such as employee benefits, payroll history, or detailed logs) are excluded from Phase 1.
+- **Minimal User Interface:** Phase 1 focuses on backend functionality, and the user interface will be minimal in design. The application will operate primarily as a backend service, with employee data presented in a simple and functional format. There will be limited focus on aesthetics or advanced user interface features.
+- **Limited Error Handling and Security:** While basic error handling will be implemented, comprehensive error management and security measures will not be addressed in Phase 1. The project focuses on implementing core functional calculations without implementing complex security features.
 
 <a name="ms2"></a>
 
