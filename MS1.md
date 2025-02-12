@@ -69,7 +69,7 @@ This project is divided into multiple deliverables through assignment submission
 - [Use Case Diagram](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing) - _Revised to clarify scope (see explanation below)_
 - [Wireframe](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing) - _Revised to include elements related to employee info and salary calculation (see explanation below)_
 - [Project Plan Timeline](https://tinyurl.com/mr4bjzjm) - _Revised to include task durations in hours (see explanation below)_
-- [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing) - _Consolidated project plan and effort estimation details here (see explanation below)_
+- [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing) - _Consolidated requirement identification, project plan and effort estimation details are merge on this project as one (see specific section below)_
 
 Each component is iteratively improved as development progresses.
 
@@ -278,7 +278,7 @@ Additional resources that would be beneficial include:
 
 ##### Estimated Time per Task
 
-Refer to this [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing) for the project's timeline and effort estimate in hours.
+Refer to this [link](https://tinyurl.com/mr4bjzjm) for the project's timeline and effort estimate in hours.
 
 ##### Estimated Project Completion
 
