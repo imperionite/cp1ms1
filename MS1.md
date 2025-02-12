@@ -288,13 +288,7 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 
 ## 📌 Use Case Diagram
 
-[![UCD](https://drive.google.com/uc?export=view&id=1fy22zh23FYo-Yga100zrazLIi1KqGD1Y)](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing)
-
-<object data="https://drive.google.com/uc?export=view&id=1fy22zh23FYo-Yga100zrazLIi1KqGD1Y" type="application/pdf" width="700px" height="700px">
-    <embed src="https://drive.google.com/uc?export=view&id=1fy22zh23FYo-Yga100zrazLIi1KqGD1Y">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing">Download PDF</a>.</p>
-    </embed>
-</object>
+[![UCD](https://drive.google.com/uc?export=view&id=1pd2-P8UZOC3Wz9scVBcRWiEM1e3ofEVh)](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing)
 
 This Use Case Diagram represents the **core functionalities** included within the **scope of Phase 1**. Given the limited scope of Phase 1 (employee information and salary calculation), the diagram focuses on the key user interactions related to these features. A more comprehensive UCD will be developed in future phases as the system's functionality expands.
 
@@ -311,9 +305,7 @@ This diagram includes two actors
 
 ## 📌 Wireframe
 
-
-[![Wireframe](https://drive.google.com/uc?export=view&id=1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV)](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
-
+[![Wireframe](https://drive.google.com/uc?export=view&id=10OZjyH9laNeh6vLhDrJok3CiTSQ4dpQt)](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
 
 The wireframe has been updated to reflect the core functionalities included in Phase 1. It primarily focuses on the UI elements required for:
 
