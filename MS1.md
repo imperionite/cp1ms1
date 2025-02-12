@@ -320,7 +320,7 @@ The wireframe provides a visual representation of the user interface for these c
 
 ## 📌 Project Plan
 
-_[Project plan timeline link](https://tinyurl.com/mr4bjzjm)_
+[![Wireframe](https://drive.google.com/uc?export=view&id=1cj1rmc9ZIcZzOdx7alc1hA9vXTBH5DXb)](https://tinyurl.com/mr4bjzjm)
 
 A structured project plan has been developed in ClickUp, breaking down the tasks into manageable sub-tasks with dependencies, ownership, deadlines, and tracking status. The development cycle follows an iterative approach to allow continuous refinement and adaptation.
 
