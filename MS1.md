@@ -291,9 +291,9 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 [![UCD](https://drive.google.com/uc?export=view&id=1bZ-I1znBJSUuQ5_wQVldZvuIgAu1zbNO)](https://drive.google.com/file/d/1bZ-I1znBJSUuQ5_wQVldZvuIgAu1zbNO/view?usp=sharing)
 
 
-This Use Case Diagram represents the **core functionalities** included within the **scope of Phase 1**. Given the limited scope of Phase 1 (employee information and salary calculation), the diagram focuses on the key user interactions related to these features. A more comprehensive UCD will be developed in future phases as the system's functionality expands.
+This Use Case Diagram represents the **core functionalities** included within the **scope of Phase 1**. Given the limited scope of Phase 1 (employee information and salary calculation), the diagram focuses on the key user interactions related to these features.
 
-### Description of the modules (use cases and actors) included in the diagram based on the requirements
+### Description of the modules (use cases and actors) included in the diagram based on the Phase 1 requirements:
 
 ### 1. **Employee** (Primary Actor)
 The **Employee** is the main user interacting with the system. Their primary goal is to view their personal information and calculate their salary based on hours worked.
@@ -371,7 +371,7 @@ For **Phase 1**, I presented **two wireframes**:
 2. **Login Wireframe**:
    - An optional module added for **system authentication**. While not explicitly required in Phase 1, this wireframe demonstrates secure access to the system.
 
-[!UCD](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)
+[![UCD](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)
 
 <a name="pp"></a>
 
