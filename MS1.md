@@ -53,7 +53,7 @@ The system addresses the following needs from the employee's perspective:
 5.  [Proposed Solution](#solution)
 6.  [Effort Estimation](#ee)
 7.  [Use Case Diagram](#uc)
-8.  [Wireframe](#wireframe)
+8.  [Wireframes](#wireframe)
 9.  [Project Plan](#pp)
 10. [Limitations & Delimitations](#ld)
 11. [Project Continuation & MS 2 Foundation](#ms2)
@@ -303,12 +303,19 @@ This diagram includes two actors
 
 <a name="wireframe"></a>
 
-## 📌 Wireframe
+## 📌 Wireframes
 
-[![Wireframe](https://drive.google.com/uc?export=view&id=10OZjyH9laNeh6vLhDrJok3CiTSQ4dpQt)](https://drive.google.com/file/d/1mCZ7C4M0fcWmybx1id2vGbOQQxCE_iBV/view?usp=sharing)
+**Employee Information and Salary Calculation Wireframe**
 
 
-The wireframe has been updated to reflect the core functionalities included in Phase 1. It primarily focuses on the UI elements required for:
+[![Employee Information and Salary Calculation Wireframe](https://drive.google.com/uc?export=view&id=1m9sBl0xKrE0M1DS9Nved54dFr8So9gEr)](https://drive.google.com/file/d/16yUJ3Dc1TiUTYpJyJbF_TjLWW8bo4R0W/view?usp=sharing)
+
+**Login Wireframe**
+
+[![Login Wireframe](https://drive.google.com/uc?export=view&id=1Tz5oBi0mnDCU8fpl4wtz1sAjrOGxnHxS)](https://drive.google.com/file/d/16yUJ3Dc1TiUTYpJyJbF_TjLWW8bo4R0W/view?usp=sharing)
+
+
+The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_vignette) primarily focuses on the UI elements required for:
 
 - Displaying employee information (Employee Number, Name, Birthday)
 - Presenting the calculated Gross and Net Salary
