@@ -293,21 +293,49 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 
 This Use Case Diagram represents the **core functionalities** included within the **scope of Phase 1**. Given the limited scope of Phase 1 (employee information and salary calculation), the diagram focuses on the key user interactions related to these features. A more comprehensive UCD will be developed in future phases as the system's functionality expands.
 
-This diagram includes two actors
+### Description of the modules (use cases and actors) included in the diagram based on the requirements
 
-- **Admin**:
-  - Manage Employee Data
-- **Employee**:
-  - Login
-  - View Personal Information
-  - View Salary Calculation
+### 1. **Employee** (Primary Actor)
+The **Employee** is the main user interacting with the system. Their primary goal is to view their personal information and calculate their salary based on hours worked.
+
+#### **Use Cases:**
+- **View Employee Information**: 
+  - The Employee views their personal details, such as **employee number**, **name**, and **birthday**. This use case allows them to access and visualize their data within the system.
+  
+- **Calculate Gross Salary**: 
+  - The Employee can calculate their **gross salary** based on the number of hours worked during a week. The system will compute the gross salary based on predefined rates or employee-specific rules.
+  
+- **Calculate Net Salary**: 
+  - After calculating the gross salary, the Employee can calculate their **net salary**, which is the amount after **deductions** (taxes, contributions, etc.) are applied.
+  
+- **Calculate Hours Worked**: 
+  - The Employee can input or check the number of **hours worked** in a given week. The system will compute the total working hours for that period.
+  
+- **Login**: 
+  - The Employee needs to log in to the system to access their details and perform the tasks above. This use case represents the **authentication** process before granting access to personal and financial data.
+
+
+### 2. **Admin/System** (Secondary Actor)
+The **Admin/System** actor is responsible for overseeing the system configuration, especially for security and access control purposes. This actor is responsible for tasks that impact the system but not the day-to-day employee usage.
+
+#### **Use Cases:**
+- **Configure JWT Authentication**: 
+  - The **Admin/System** is responsible for setting up **JWT Authentication** (JSON Web Tokens). This is a security feature that ensures **safe login** and secure sessions for Employees. Admin/System manages user sessions and authentication rules for the system.
+
+### **General Notes**:
+- **Primary Actor**: **Employee** is the main user interacting with the system and performing most of the tasks, such as viewing their information, calculating their salary, and logging in.
+- **Secondary Actor**: **Admin/System** is involved in managing the security and configuration aspects of the system (like authentication setup), ensuring the system functions smoothly and securely.
+
+### **Key Points**:
+- **Employee** can perform most of the tasks related to their salary and information, with the exception of system configuration.
+- **Admin/System** has administrative control, particularly in handling authentication and security measures.
+
 
 <a name="wireframe"></a>
 
 ## 📌 Wireframes
 
 **Employee Information and Salary Calculation Wireframe**
-
 
 [![Employee Information and Salary Calculation Wireframe](https://drive.google.com/uc?export=view&id=1m9sBl0xKrE0M1DS9Nved54dFr8So9gEr)](https://drive.google.com/file/d/16yUJ3Dc1TiUTYpJyJbF_TjLWW8bo4R0W/view?usp=sharing)
 
@@ -323,7 +351,27 @@ The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_v
 - Login interface
 - Display Manage Employee Data
 
-The wireframe provides a visual representation of the user interface for these core features. Given the time constraints on Phase 1, only simple UI is presented.
+As part of the MotorPH Phase 1 requirements, the focus was on designing low-fidelity wireframes that effectively represent the core user interactions needed for the system’s initial phase. The wireframes have been created to capture the essential functionality as outlined in the project requirements, particularly emphasizing the presentation of employee information and salary calculation.
+
+### Wireframing Approach & Rationale
+
+For **Phase 1**, I presented **two wireframes**:
+
+1. **Employee Information & Salary Calculation Wireframe**:
+   - This wireframe combines the following core modules:
+     - **View Employee Information** (Displays employee details like name, employee number, and birthday)
+     - **Calculate Hours Worked** (Tracks and calculates weekly hours worked by the employee)
+     - **Calculate Gross Salary** (Calculates the gross salary based on the hours worked)
+     - **Calculate Net Salary** (Deducts taxes and other deductions to determine the net salary)
+   - Grouping these modules into one wireframe reflects the logical flow of employee data and salary calculations, fulfilling the core objectives of Phase 1.
+   - All of these tasks are **interconnected**. Employee details, hours worked, and salary calculations naturally belong together in a **single flow**. This allows the user to smoothly transition from viewing information to performing calculations without unnecessary interruptions or screen changes.
+   - By grouping these modules, the wireframe presents a **clear and unified interface**, reducing complexity. This enables users to perform related tasks in one place, minimizing navigation and making the process more intuitive.
+   - Phase 1 emphasizes presenting employee information and salary calculations in a **basic and functional format**. Combining these tasks into one wireframe ensures that the essential objectives of the project—**data display** and **salary calculation**—are efficiently met, without overcomplicating the design.
+
+2. **Login Wireframe**:
+   - An optional module added for **system authentication**. While not explicitly required in Phase 1, this wireframe demonstrates secure access to the system.
+
+[!UCD](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)
 
 <a name="pp"></a>
 
