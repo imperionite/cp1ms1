@@ -368,10 +368,12 @@ For **Phase 1**, I presented **two wireframes**:
    - By grouping these modules, the wireframe presents a **clear and unified interface**, reducing complexity. This enables users to perform related tasks in one place, minimizing navigation and making the process more intuitive.
    - Phase 1 emphasizes presenting employee information and salary calculations in a **basic and functional format**. Combining these tasks into one wireframe ensures that the essential objectives of the project—**data display** and **salary calculation**—are efficiently met, without overcomplicating the design.
 
+
+[![Wireframe and its Rationale](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)
+
+
 2. **Login Wireframe**:
    - An optional module added for **system authentication**. While not explicitly required in Phase 1, this wireframe demonstrates secure access to the system.
-
-[![UCD](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)
 
 <a name="pp"></a>
 
