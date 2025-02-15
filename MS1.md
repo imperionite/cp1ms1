@@ -351,16 +351,16 @@ The **Admin/System** actor is responsible for overseeing the system configuratio
 
 **Employee Information/Home Screen Wireframe**
 
-[![Employee Information Wireframe](https://drive.google.com/file/d/155-1JkjkVK9L6nJyekLi834elu1Zbdce/view?usp=sharing)](https://drive.google.com/file/d/155-1JkjkVK9L6nJyekLi834elu1Zbdce/view?usp=sharing)
+[![Employee Information Wireframe](https://drive.google.com/uc?export=view&id=1HJMiTYJbJeq71osyofQtG7-4XsJItgim)](https://drive.google.com/file/d/1HJMiTYJbJeq71osyofQtG7-4XsJItgim/view?usp=sharing)
 
 **Salary Calculation & Work Hours Wireframe**
 
-[![Salary Calculation & Work Hours Wireframe](https://drive.google.com/file/d/1Ji-bQFv-fNMaOBbtg5q9nXuh77bmR6tZ/view?usp=sharing)](https://drive.google.com/file/d/1Ji-bQFv-fNMaOBbtg5q9nXuh77bmR6tZ/view?usp=sharing)
-
+[![Salary Calculation & Work Hours Wireframe](https://drive.google.com/uc?export=view&id=1-2ceZ0iXjI1yCf8Fbz09EEm4JqZAVbAG)](https://drive.google.com/file/d/1-2ceZ0iXjI1yCf8Fbz09EEm4JqZAVbAG/view?usp=sharing)
 
 **Admin Dashboard Wireframe**
 
-[![Admin Dashboard Wireframe](https://drive.google.com/file/d/1Je49ngnffYZOca5o25uwKiXKg_GTE1Z8/view?usp=sharing)](https://drive.google.com/file/d/1Je49ngnffYZOca5o25uwKiXKg_GTE1Z8/view?usp=sharing)
+[![Admin Wireframe](https://drive.google.com/uc?export=view&id=1lhS-UcqCbnUyaX3W16xQ4GUOHgdl2MKT)](https://drive.google.com/file/d/1lhS-UcqCbnUyaX3W16xQ4GUOHgdl2MKT/view?usp=sharing)
+
 
 
 The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_vignette) primarily focuses on the UI elements required for:
