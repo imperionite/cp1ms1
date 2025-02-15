@@ -288,7 +288,8 @@ To determine the number of weeks required to complete my outputs for Phase 1 of 
 
 ## 📌 Use Case Diagram
 
-[<img src="https://drive.google.com/uc?export=view&id=1pd2-P8UZOC3Wz9scVBcRWiEM1e3ofEVh" width="550" height="550"/>](https://drive.google.com/file/d/1fy22zh23FYo-Yga100zrazLIi1KqGD1Y/view?usp=sharing)
+[![Logo](https://drive.google.com/uc?export=view&id=1pd2-P8UZOC3Wz9scVBcRWiEM1e3ofEVh)](https://drive.google.com/file/d/1bZ-I1znBJSUuQ5_wQVldZvuIgAu1zbNO/view?usp=sharing)
+
 
 This Use Case Diagram represents the **core functionalities** included within the **scope of Phase 1**. Given the limited scope of Phase 1 (employee information and salary calculation), the diagram focuses on the key user interactions related to these features. A more comprehensive UCD will be developed in future phases as the system's functionality expands.
 
