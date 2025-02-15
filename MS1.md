@@ -329,6 +329,18 @@ The **Admin/System** actor is responsible for overseeing the system configuratio
 - **Employee** can perform most of the tasks related to their salary and information, with the exception of system configuration.
 - **Admin/System** has administrative control, particularly in handling authentication and security measures.
 
+#### Table mapping the Phase 1 requirements, suggested wireframes, and how they relate to potential modules payroll system:
+
+| Phase 1 Requirement/Task | Suggested Wireframe | Potential Module(s) | Notes |
+|---|---|---|---|
+| Employee details presentation | Employee Dashboard/Home Screen | Employee Management | This module would handle storing, retrieving, and displaying employee information. The wireframe shows *how* that information is presented. |
+| Hours worked calculation | Salary & Work Hours Details | Time Management/Payroll Calculation | This module likely handles time tracking (even if simplified for Phase 1) and forms the basis for salary calculations. The wireframe focuses on the *input* and *display* of hours worked. |
+| Gross wage calculation | Salary & Work Hours Details | Payroll Calculation | This module performs the actual gross salary calculation. The wireframe shows the results of this calculation. |
+| Net wage calculation | Salary & Work Hours Details | Payroll Calculation/Deductions | This module handles deductions and calculates the net salary. The wireframe details how these calculations and the final net salary are displayed. |
+| Employee log-in/log-out | Login/Logout Wireframe | Authentication/User Management | This module handles user authentication. The wireframe shows the login/logout UI and potentially the grace period handling. |
+| Admin/System User features (implied) | Admin/System User Dashboard | System Administration/User Management |  Even if minimal in Phase 1, this suggests a module for system administration. The wireframe provides a glimpse into this area. |
+
+
 
 <a name="wireframe"></a>
 
