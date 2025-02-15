@@ -295,64 +295,72 @@ This Use Case Diagram represents the **core functionalities** included within th
 ### Description of the modules (use cases and actors) included in the diagram based on the Phase 1 requirements:
 
 ### 1. **Employee** (Primary Actor)
+
 The **Employee** is the main user interacting with the system. Their primary goal is to view their personal information and calculate their salary based on hours worked.
 
 #### **Use Cases:**
-- **View Employee Information**: 
+
+- **View Employee Information**:
   - The Employee views their personal details, such as **employee number**, **name**, and **birthday**. This use case allows them to access and visualize their data within the system.
-  
-- **Calculate Gross Salary**: 
+- **Calculate Gross Salary**:
   - The Employee can calculate their **gross salary** based on the number of hours worked during a week. The system will compute the gross salary based on predefined rates or employee-specific rules.
-  
-- **Calculate Net Salary**: 
+- **Calculate Net Salary**:
   - After calculating the gross salary, the Employee can calculate their **net salary**, which is the amount after **deductions** (taxes, contributions, etc.) are applied.
-  
-- **Calculate Hours Worked**: 
+- **Calculate Hours Worked**:
   - The Employee can input or check the number of **hours worked** in a given week. The system will compute the total working hours for that period.
-  
-- **Login**: 
+- **Login**:
   - The Employee needs to log in to the system to access their details and perform the tasks above. This use case represents the **authentication** process before granting access to personal and financial data.
 
-
 ### 2. **Admin/System** (Secondary Actor)
+
 The **Admin/System** actor is responsible for overseeing the system configuration, especially for security and access control purposes. This actor is responsible for tasks that impact the system but not the day-to-day employee usage.
 
 #### **Use Cases:**
-- **Configure JWT Authentication**: 
+
+- **Configure JWT Authentication**:
   - The **Admin/System** is responsible for setting up **JWT Authentication** (JSON Web Tokens). This is a security feature that ensures **safe login** and secure sessions for Employees. Admin/System manages user sessions and authentication rules for the system.
 
 ### **General Notes**:
+
 - **Primary Actor**: **Employee** is the main user interacting with the system and performing most of the tasks, such as viewing their information, calculating their salary, and logging in.
 - **Secondary Actor**: **Admin/System** is involved in managing the security and configuration aspects of the system (like authentication setup), ensuring the system functions smoothly and securely.
 
 ### **Key Points**:
+
 - **Employee** can perform most of the tasks related to their salary and information, with the exception of system configuration.
 - **Admin/System** has administrative control, particularly in handling authentication and security measures.
 
 #### Table mapping the Phase 1 requirements, suggested wireframes, and how they relate to potential modules payroll system:
 
-| Phase 1 Requirement/Task | Suggested Wireframe | Potential Module(s) | Notes |
-|---|---|---|---|
-| Employee details presentation | Employee Dashboard/Home Screen | Employee Management | This module would handle storing, retrieving, and displaying employee information. The wireframe shows *how* that information is presented. |
-| Hours worked calculation | Salary & Work Hours Details | Time Management/Payroll Calculation | This module likely handles time tracking (even if simplified for Phase 1) and forms the basis for salary calculations. The wireframe focuses on the *input* and *display* of hours worked. |
-| Gross wage calculation | Salary & Work Hours Details | Payroll Calculation | This module performs the actual gross salary calculation. The wireframe shows the results of this calculation. |
-| Net wage calculation | Salary & Work Hours Details | Payroll Calculation/Deductions | This module handles deductions and calculates the net salary. The wireframe details how these calculations and the final net salary are displayed. |
-| Employee log-in/log-out | Login/Logout Wireframe | Authentication/User Management | This module handles user authentication. The wireframe shows the login/logout UI and potentially the grace period handling. |
-| Admin/System User features (implied) | Admin/System User Dashboard | System Administration/User Management |  Even if minimal in Phase 1, this suggests a module for system administration. The wireframe provides a glimpse into this area. |
-
-
+| Phase 1 Requirement/Task             | Suggested Wireframe            | Potential Module(s)                   | Notes                                                                                                                                                                                      |
+| ------------------------------------ | ------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Employee details presentation        | Employee Dashboard/Home Screen | Employee Management                   | This module would handle storing, retrieving, and displaying employee information. The wireframe shows _how_ that information is presented.                                                |
+| Hours worked calculation             | Salary & Work Hours Details    | Time Management/Payroll Calculation   | This module likely handles time tracking (even if simplified for Phase 1) and forms the basis for salary calculations. The wireframe focuses on the _input_ and _display_ of hours worked. |
+| Gross wage calculation               | Salary & Work Hours Details    | Payroll Calculation                   | This module performs the actual gross salary calculation. The wireframe shows the results of this calculation.                                                                             |
+| Net wage calculation                 | Salary & Work Hours Details    | Payroll Calculation/Deductions        | This module handles deductions and calculates the net salary. The wireframe details how these calculations and the final net salary are displayed.                                         |
+| Employee log-in/log-out              | Login/Logout Wireframe         | Authentication/User Management        | This module handles user authentication. The wireframe shows the login/logout UI and potentially the grace period handling.                                                                |
+| Admin/System User features (implied) | Admin/System User Dashboard    | System Administration/User Management | Even if minimal in Phase 1, this suggests a module for system administration. The wireframe provides a glimpse into this area.                                                             |
 
 <a name="wireframe"></a>
 
 ## 📌 Wireframes
 
-**Employee Information and Salary Calculation Wireframe**
-
-[![Employee Information and Salary Calculation Wireframe](https://drive.google.com/uc?export=view&id=1m9sBl0xKrE0M1DS9Nved54dFr8So9gEr)](https://drive.google.com/file/d/16yUJ3Dc1TiUTYpJyJbF_TjLWW8bo4R0W/view?usp=sharing)
-
 **Login Wireframe**
 
 [![Login Wireframe](https://drive.google.com/uc?export=view&id=1Tz5oBi0mnDCU8fpl4wtz1sAjrOGxnHxS)](https://drive.google.com/file/d/16yUJ3Dc1TiUTYpJyJbF_TjLWW8bo4R0W/view?usp=sharing)
+
+**Employee Information/Home Screen Wireframe**
+
+[![Employee Information Wireframe](https://drive.google.com/uc?export=view&id=155-1JkjkVK9L6nJyekLi834elu1Zbdce)](https://drive.google.com/file/d/155-1JkjkVK9L6nJyekLi834elu1Zbdce/view?usp=sharing)
+
+**Salary Calculation & Work Hours Wireframe**
+
+[![Salary Calculation & Work Hours Wireframe](https://drive.google.com/uc?export=view&id=1Ji-bQFv-fNMaOBbtg5q9nXuh77bmR6tZ)](https://drive.google.com/file/d/1Ji-bQFv-fNMaOBbtg5q9nXuh77bmR6tZ/view?usp=sharing)
+
+
+**Admin Dashboard Wireframe**
+
+[![Admin Dashboard Wireframe](https://drive.google.com/uc?export=view&id=1Je49ngnffYZOca5o25uwKiXKg_GTE1Z8/)](https://drive.google.com/file/d/1Je49ngnffYZOca5o25uwKiXKg_GTE1Z8/view?usp=sharing)
 
 
 The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_vignette) primarily focuses on the UI elements required for:
@@ -364,27 +372,6 @@ The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_v
 
 As part of the MotorPH Phase 1 requirements, the focus was on designing low-fidelity wireframes that effectively represent the core user interactions needed for the system’s initial phase. The wireframes have been created to capture the essential functionality as outlined in the project requirements, particularly emphasizing the presentation of employee information and salary calculation.
 
-### Wireframing Approach & Rationale
-
-For **Phase 1**, I presented **two wireframes**:
-
-1. **Employee Information & Salary Calculation Wireframe**:
-   - This wireframe combines the following core modules:
-     - **View Employee Information** (Displays employee details like name, employee number, and birthday)
-     - **Calculate Hours Worked** (Tracks and calculates weekly hours worked by the employee)
-     - **Calculate Gross Salary** (Calculates the gross salary based on the hours worked)
-     - **Calculate Net Salary** (Deducts taxes and other deductions to determine the net salary)
-   - Grouping these modules into one wireframe reflects the logical flow of employee data and salary calculations, fulfilling the core objectives of Phase 1.
-   - All of these tasks are **interconnected**. Employee details, hours worked, and salary calculations naturally belong together in a **single flow**. This allows the user to smoothly transition from viewing information to performing calculations without unnecessary interruptions or screen changes.
-   - By grouping these modules, the wireframe presents a **clear and unified interface**, reducing complexity. This enables users to perform related tasks in one place, minimizing navigation and making the process more intuitive.
-   - Phase 1 emphasizes presenting employee information and salary calculations in a **basic and functional format**. Combining these tasks into one wireframe ensures that the essential objectives of the project—**data display** and **salary calculation**—are efficiently met, without overcomplicating the design.
-
-
-[![Wireframe and its Rationale](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)](https://drive.google.com/uc?export=view&id=164FC853ZcZGKwQP0zunG0BQHnZsmSkst)
-
-
-2. **Login Wireframe**:
-   - An optional module added for **system authentication**. While not explicitly required in Phase 1, this wireframe demonstrates secure access to the system.
 
 <a name="pp"></a>
 
@@ -408,6 +395,8 @@ To ensure a clear understanding of the boundaries of this Phase 1 implementation
 - **Testing Limitations:** Testing is concentrated on validating the functionality of employee data presentation, work hour calculation, and salary computation. System-wide testing, user acceptance testing, load testing, stress testing, performance optimization, or comprehensive security testing are not performed in this phase.
 - **Optional Features:** Any features that are not explicitly stated in the Phase 1 requirements are considered optional elements. Their implementation depends on time availability after fulfilling all mandatory requirements and is at the discretion of the developer, based on available time and resources.
 - **Reliance on Mentor Suggestions:** The developer welcomes mentoring and feedback from the mentor and actively seeks their comments and suggestions during mentoring sessions. However, implementation decisions are based on their impact on the project's timeline, feasibility, learning objectives, and available resources.
+- **Data Handling Constraints:** The provided Google Sheets contains extensive data for reference; however, due to the volume of data and time constraints, it is impractical to copy every data point manually. Consequently, only a subset of essential data is seeded into the database.
+- **Pre-populated Database:** The decision to seed the database via ApplicationRunner with a manually selected subset of data is deliberate. It aligns with the project requirements by using the Google Sheets solely as a reference for determining the necessary data attributes and values. This approach ensures the API is built and tested based on a realistic and representative sample of data while avoiding the overhead of integrating a live data connection.
 
 **Delimitations**
 
