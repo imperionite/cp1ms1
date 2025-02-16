@@ -68,7 +68,7 @@ This project is divided into multiple deliverables through assignment submission
 
 - [Use Case Diagram](https://drive.google.com/file/d/1oAsqdUVVkQvIatn6wIWIAOYb3HyD38I3/view?usp=sharing) - _See explanation below_
 - [Wireframes](https://drive.google.com/file/d/11ihuXN8CBX7MP_ah5gwYrsxY5o_b9HvX/view?usp=sharing) - _See explanation below_
-- [Project Plan Timeline](https://tinyurl.com/mr4bjzjm) - _Revised to include task durations in hours (see explanation below)_
+- [Project Plan Timeline](https://tinyurl.com/mr4bjzjm) - _See explanation below_
 - [MotorPH Requirements Worksheet](https://docs.google.com/spreadsheets/d/16WVjM2qbPiA4lTBkNgSnAEH1urHDoyUGpCUNWzILGxU/edit?usp=sharing) - _Consolidated requirement identification, project plan and effort estimation details are merge on this project as one (see specific section below)_
 
 Each component is iteratively improved as development progresses.
