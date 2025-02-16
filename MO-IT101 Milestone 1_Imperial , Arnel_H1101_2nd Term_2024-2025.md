@@ -357,10 +357,13 @@ The **Admin/System** actor is responsible for overseeing the system configuratio
 
 [![Salary Calculation & Work Hours Wireframe](https://drive.google.com/uc?export=view&id=1-2ceZ0iXjI1yCf8Fbz09EEm4JqZAVbAG)](https://drive.google.com/file/d/1-2ceZ0iXjI1yCf8Fbz09EEm4JqZAVbAG/view?usp=sharing)
 
-**Admin Dashboard Wireframe**
+**Admin Dashboard Wireframe (Implied)**
 
 [![Admin Wireframe](https://drive.google.com/uc?export=view&id=1lhS-UcqCbnUyaX3W16xQ4GUOHgdl2MKT)](https://drive.google.com/file/d/1lhS-UcqCbnUyaX3W16xQ4GUOHgdl2MKT/view?usp=sharing)
 
+**Time-in/Time-out Wireframe (Optional)**
+
+[![Time-in/Time-out Wireframe](https://drive.google.com/uc?export=view&id=1k3p7ApvT2gbxpxTW1jHkdIETgRywe3lz)](https://drive.google.com/file/d/1k3p7ApvT2gbxpxTW1jHkdIETgRywe3lz/view?usp=sharing)
 
 
 The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_vignette) primarily focuses on the UI elements required for:
