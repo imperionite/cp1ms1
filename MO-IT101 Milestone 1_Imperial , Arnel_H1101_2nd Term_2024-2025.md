@@ -332,14 +332,15 @@ The **Admin/System** actor is responsible for overseeing the system configuratio
 
 #### Table mapping the Phase 1 requirements, suggested wireframes, and how they relate to potential modules payroll system:
 
-| Phase 1 Requirement/Task             | Suggested Wireframe            | Potential Module(s)                   | Notes                                                                                                                                                                                      |
-| ------------------------------------ | ------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Employee details presentation        | Employee Dashboard/Home Screen | Employee Management                   | This module would handle storing, retrieving, and displaying employee information. The wireframe shows _how_ that information is presented.                                                |
-| Hours worked calculation             | Salary & Work Hours Details    | Time Management/Payroll Calculation   | This module likely handles time tracking (even if simplified for Phase 1) and forms the basis for salary calculations. The wireframe focuses on the _input_ and _display_ of hours worked. |
-| Gross wage calculation               | Salary & Work Hours Details    | Payroll Calculation                   | This module performs the actual gross salary calculation. The wireframe shows the results of this calculation.                                                                             |
-| Net wage calculation                 | Salary & Work Hours Details    | Payroll Calculation/Deductions        | This module handles deductions and calculates the net salary. The wireframe details how these calculations and the final net salary are displayed.                                         |
-| Employee log-in/log-out              | Login/Logout Wireframe         | Authentication/User Management        | This module handles user authentication. The wireframe shows the login/logout UI and potentially the grace period handling.                                                                |
-| Admin/System User features (implied) | Admin/System User Dashboard    | System Administration/User Management | Even if minimal in Phase 1, this suggests a module for system administration. The wireframe provides a glimpse into this area.                                                             |
+| Phase 1 Requirement/Task                 | Suggested Wireframe            | Potential Module(s)                   | Notes                                                                                                                                                                                      |
+| ---------------------------------------- | ------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Employee details presentation            | Employee Dashboard/Home Screen | Employee Management                   | This module would handle storing, retrieving, and displaying employee information. The wireframe shows _how_ that information is presented.                                                |
+| Hours worked calculation                 | Salary & Work Hours Details    | Time Management/Payroll Calculation   | This module likely handles time tracking (even if simplified for Phase 1) and forms the basis for salary calculations. The wireframe focuses on the _input_ and _display_ of hours worked. |
+| Gross wage calculation                   | Salary & Work Hours Details    | Payroll Calculation                   | This module performs the actual gross salary calculation. The wireframe shows the results of this calculation.                                                                             |
+| Net wage calculation                     | Salary & Work Hours Details    | Payroll Calculation/Deductions        | This module handles deductions and calculates the net salary. The wireframe details how these calculations and the final net salary are displayed.                                         |
+| Employee log-in/log-out (Timekeeping)    | Time-In/Time-Out Wireframe     | Timekeeping (Optional)                | This module handles employee time-in and time-out recording. The wireframe shows the UI for clocking in and out. This is an _optional_ feature for Phase 1, developer's preference.        |
+| Employee log-in/log-out (Authentication) | Login/Logout Wireframe         | Authentication/User Management        | This module handles user authentication. The wireframe shows the login/logout UI and potentially the grace period handling.                                                                |
+| Admin/System User features (implied)     | Admin/System User Dashboard    | System Administration/User Management | Even if minimal in Phase 1, this suggests a module for system administration. The wireframe provides a glimpse into this area.                                                             |
 
 <a name="wireframe"></a>
 
@@ -365,7 +366,6 @@ The **Admin/System** actor is responsible for overseeing the system configuratio
 
 [![Time-in/Time-out Wireframe](https://drive.google.com/uc?export=view&id=1k3p7ApvT2gbxpxTW1jHkdIETgRywe3lz)](https://drive.google.com/file/d/1k3p7ApvT2gbxpxTW1jHkdIETgRywe3lz/view?usp=sharing)
 
-
 The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_vignette) primarily focuses on the UI elements required for:
 
 - Displaying employee information (Employee Number, Name, Birthday)
@@ -374,7 +374,6 @@ The wireframes created using [Pencil Project](https://pencil.evolus.vn/#google_v
 - Display Manage Employee Data
 
 As part of the MotorPH Phase 1 requirements, the focus was on designing low-fidelity wireframes that effectively represent the core user interactions needed for the system’s initial phase. The wireframes have been created to capture the essential functionality as outlined in the project requirements, particularly emphasizing the presentation of employee information and salary calculation.
-
 
 <a name="pp"></a>
 
